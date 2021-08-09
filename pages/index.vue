@@ -96,6 +96,15 @@
           </div>
           <div class="right-side w-4/12 px-2 my-12 relative">
             <div class="border-4 border-gray-700 rounded-xl p-4">
+              <div class="flex justify-center">
+                <div
+                  class="absolute-part absolute -top-12 bg-gray-100 border m-4 p-4"
+                >
+                  <h4 class="text-4xl text-gray-700">
+                    আন্তর্জাতিক
+                  </h4>
+                </div>
+              </div>
               <div class="my-8">
                 <ArticleHeadingList />
               </div>
