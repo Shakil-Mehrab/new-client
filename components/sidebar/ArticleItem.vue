@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2 flex border-b-2 w-full">
+  <div class="py-2 flex border-b-2 w-full">
     <div class="figure  w-4/12">
       <img src="~/assets/images/dbc/topsectionside.png" alt="" clall="w-full" />
     </div>

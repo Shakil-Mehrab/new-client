@@ -8,7 +8,7 @@
       <div class="detail py-2">
         <p class="text-base font-medium text-gray-500">
           <span class="bg-red-600 w-4 h-1 inline-block"></span>
-          <span class="text-red-600">Covid</span>
+          <span class="text-red-600 uppercase">Covid</span>
         </p>
         <h4 class="text-base font-medium text-gray-700 my-2">
           নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
@@ -29,6 +29,11 @@
             /></svg
           >Tuesday, June 29, 2021
         </p>
+        <div>
+          <div>
+            <input type="text" />
+          </div>
+        </div>
       </div>
       <div class="number">
         <span class="text-6xl font-medium text-gray-500">1</span>

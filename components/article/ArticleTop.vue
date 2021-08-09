@@ -1,7 +1,7 @@
 <template>
   <div class="my-2 relative w-full">
     <div class="figure w-full">
-      <img src="~/assets/images/dbc/topsectionmid.png" alt="" clall="w-full" />
+      <img src="~/assets/images/dbc/topsectionmid.png" alt="" class="w-full" />
     </div>
     <div
       class="detail absolute -bottom-16 left-0 right-0 w-10/12 mx-auto px-4 text-center bg-white rounded-md"
@@ -36,9 +36,7 @@
         <p class="text-sm text-gray-500">
           দেশে করোনা সংক্রমণের ৫১৮তম দিনে আজ রবিবার (৭ আগস্ট), করোনা পরিস্থিতি
           নিয়ে স্বাস্থ্য অধিদপ্তর থেকে পাঠানো বিজ্ঞপ্তিতে জানানো হয়, গত ২৪
-          ঘণ্টায় সারা দেশে নমুনা সংগ্রহ করা হয়েছে ৪০ হাজার ১৩০টি। আর দেশের মোট
-          ৭০৭টি ল্যাবে অ্যান্টিজেন টেস্টসহ ২৪ ঘণ্টায় নমুনা পরীক্ষা করা হয়েছে ৪২
-          হাজার ৩টি। এর মধ্যে ১০ হাজার ২৯৯ জনের দেহে করোনার উপস্থিতি পাওয়া গেছে
+          ঘণ্টায় সারা দেশে নমুনা সংগ্রহ করা হয়েছে ৪০ হাজার ১৩০টি।
         </p>
       </div>
     </div>

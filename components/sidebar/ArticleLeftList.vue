@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <template v-for="n in 4">
+    <template v-for="n in 5">
       <ArticleItem :key="n" />
     </template>
   </div>
