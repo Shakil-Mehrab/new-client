@@ -3,21 +3,21 @@
     <!-- top section  -->
     <section class="top-news-section my-4">
       <div class="container mx-auto">
-        <div class="flex w-full">
-          <div class="w-4/12 px-2 my-2">
+        <div class="md:flex flex-wrap w-full">
+          <div class="md:w-4/12 px-2 my-2">
             <ArticleLeftList />
           </div>
-          <div class="mid w-8/12 px-2 my-2">
+          <div class="md:w-6/12 px-2 my-16 md:my-2">
             <ArticleTop />
           </div>
-          <div class="w-4/12 px-2 my-2">
-            <ArticleRightList />
+          <div class="w-2/12 px-2 my-2">
+            <ArticleHeadingList />
           </div>
         </div>
       </div>
     </section>
     <!-- covid section  -->
-    <section class="slide-section my-4">
+    <!-- <section class="slide-section my-4">
       <div class="container mx-auto ">
         <div class="bg-gray-100 p-4">
           <div class="w-10/12 mx-auto">
@@ -68,25 +68,25 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- banner  -->
     <AdvertiseItem />
     <!-- International  -->
     <section class="International my-4">
       <div class="container mx-auto">
-        <div class="flex w-full">
-          <div class="left-side w-8/12 px-2 my-2">
+        <div class="flex flex-wrap w-full">
+          <div class="left-side md:w-8/12 px-2 my-2">
             <Heading />
-            <div class="news-section flex w-full">
-              <div class="left-most w-6/12 my-2 pr-2">
+            <div class="md:flex w-full flex-wrap">
+              <div class="md:w-6/12 my-2 pr-2">
                 <ArticleTopLeft />
               </div>
-              <div class="w-6/12 px-2">
+              <div class="md:w-6/12 px-2">
                 <ArticleRightList />
               </div>
             </div>
           </div>
-          <div class="right-side w-4/12 px-2 my-12 relative">
+          <div class="w-full md:w-4/12 px-2 my-12 relative">
             <div class="border-4 border-gray-700 rounded-xl p-4">
               <div class="flex justify-center">
                 <div
@@ -109,8 +109,8 @@
     <section class="Subscribe my-4">
       <div class="container mx-auto">
         <div class="subscribe-bg-img bg-red-600 rounded-xl overflow-hidden">
-          <div class=" flex items-center px-12 py-12 w-full">
-            <div class="w-6/12 my-2 px-2">
+          <div class=" flex flex-wrap items-center px-12 py-12 w-full">
+            <div class="md:w-6/12 my-2 px-2">
               <h4 class="text-2xl font-medium text-white">
                 নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
               </h4>
@@ -119,7 +119,7 @@
                 করোনায় শনাক্তের সংখ্যা দাঁড়ালো ১৩ লাখ ৫৩ হাজার ৬৯৫ জন।
               </p>
             </div>
-            <div class="w-6/12 my-2 px-2">
+            <div class="w-full md:w-6/12 my-2 px-2">
               <div class="flex items-center w-full">
                 <input
                   type="text"
@@ -140,48 +140,20 @@
     <!-- Ceremony  -->
     <section class="ceremony my-4">
       <div class="container mx-auto">
-        <div class="flex w-full">
-          <div class="left-side w-8/12 px-2 my-2">
+        <div class="md:flex flex-wrap w-full">
+          <div class="md:w-8/12 px-2 my-2">
             <Heading />
-            <div class="news-section flex w-full">
-              <div class="left-most w-8/12 my-2 pr-2">
+            <div class="md:flex flex-wrap w-full">
+              <div class="left-most md:w-8/12 my-2 pr-2">
                 <ArticleTop />
               </div>
-              <div class="w-4/12 px-2 my-2">
+              <div class="md:w-4/12 px-2 my-16 md:my-2">
                 <ArticleHeadingList />
               </div>
             </div>
           </div>
-          <div class="right-side w-4/12 px-2 my-2 relative">
-            <div class="w-full my-2">
-              <Heading />
-              <div class="grid grid-rows-2 grid-cols-2 gap-2">
-                <div class="bg-red-600 p-4 rounded-md" v-for="n in 4" :key="n">
-                  <div class="flex w-full items-center text-white">
-                    <div class="icon bg-red-900 p-2 rounded-full">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="px-4">
-                      <h4 class="text-base font-medium">17M</h4>
-                      <span>Followers</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="md:w-4/12 px-2 my-2 relative">
+            <ContactUs />
             <div class="w-full my-2">
               <Heading />
               <div class="w-full">
@@ -249,7 +221,7 @@
           </div>
         </div>
         <div class="flex w-full items-center">
-          <div class="left-side w-4/12 px-2 my-2">
+          <div class="left-side md:w-4/12 px-2 my-2">
             <p class="text-base font-medium text-gray-500">
               <span class="bg-red-600 w-4 h-1 inline-block"></span>
               <span class="text-red-600">PLATFORM-TEST</span>
@@ -277,7 +249,7 @@
               উদ্বোধনের একদিন পরও চালু হয়নি করোনার ফিল্ড হাসপাতাল
             </p>
           </div>
-          <div class="right-side w-8/12 px-2 my-2">
+          <div class="right-side md:w-8/12 px-2 my-2">
             <div class="vidow-section rounded-md overflow-hidden">
               <iframe
                 width="100%"
@@ -311,7 +283,7 @@
     <!-- advertisement  -->
     <AdvertiseItem />
     <!-- Special news  -->
-    <section class="spcial-news my-4">
+    <!-- <section class="spcial-news my-4">
       <div class="container mx-auto">
         <div class="w-full px-2">
           <Heading />
@@ -362,12 +334,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- four div  -->
     <section class="slide-section my-4">
       <div class="container mx-auto ">
         <div class="flex w-full justify-center items-center">
-          <div class="w-full px-4 my-2" v-for="n in 4" :key="n">
+          <div
+            class="w-full px-4 my-2 first:pl-2 last:pr-2"
+            v-for="n in 4"
+            :key="n"
+          >
             <div class="figure relative">
               <img src="~/assets/images/dbc/play.png" alt="" class="w-full" />
               <div class="flex">
@@ -429,7 +405,11 @@
           </p>
         </div>
         <div class="flex flex-wrap w-full justify-center items-center -mt-4">
-          <div class="px-4 my-4 w-3/12  border-r-2 " v-for="n in 8" :key="n">
+          <div
+            class="px-2 my-4 w-3/12  border-r-2 first:pl-2"
+            v-for="n in 8"
+            :key="n"
+          >
             <div class="w-full -mb-4 border-b-2">
               <div class="figure relative">
                 <img src="~/assets/images/dbc/play.png" alt="" class="w-full" />
@@ -514,34 +494,7 @@
             <div>
               <Heading />
             </div>
-            <div class="w-full">
-              <div class="flex">
-                <div
-                  class="p-4 w-full bg-red-600 rounded-md text-white text-2xl text-center"
-                >
-                  Trending
-                </div>
-                <div
-                  class="p-4 w-full bg-gray-100 rounded-md  text-2xl text-center"
-                >
-                  Most Recent
-                </div>
-              </div>
-              <div class="flex w-full border-b-2 py-2" v-for="n in 4" :key="n">
-                <div class="figure relative">
-                  <img
-                    src="~/assets/images/dbc/play.png"
-                    alt=""
-                    class="w-full"
-                  />
-                </div>
-                <div class="detail px-2">
-                  <h4 class="text-base font-medium text-gray-700">
-                    নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-                  </h4>
-                </div>
-              </div>
-            </div>
+            <MostPopular />
 
             <div class="figure my-4 text-right">
               <img
@@ -561,7 +514,11 @@
           <Heading />
         </div>
         <div class="flex w-full justify-center items-center">
-          <div class="w-full px-4 my-2" v-for="n in 4" :key="n">
+          <div
+            class="w-full px-4 my-2 first:pl-2 last:pr-2"
+            v-for="n in 4"
+            :key="n"
+          >
             <div class="figure relative">
               <img src="~/assets/images/dbc/play.png" alt="" class="w-full" />
             </div>
@@ -609,12 +566,145 @@
           </div>
           <div class="right-side w-4/12 px-2 my-2 relative">
             <Heading />
-            <div class="figure my-4 text-right">
+            <div class="figure my-4 text-right relative">
               <img
                 src="@/assets/images/dbc/addlong.png"
                 alt=""
                 class="w-full ml-auto"
               />
+              <div
+                class="absolute bottom-4 p-4 text-white text-base font-medium"
+              >
+                এবার শিল্পী সমিতির সদস্যপদ হারালেন পরীমনি
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Opinion  -->
+    <section class="slide-section my-4">
+      <div class="container mx-auto ">
+        <div class="flex w-full justify-center">
+          <div class="w-8/12 px-2 my-2 ">
+            <div>
+              <Heading />
+            </div>
+            <div class="flex w-full">
+              <div class="w-6/12 px-2 my-2 ">
+                <div class="border rounded-md h-full relative flex items-end">
+                  <div class="detail px-4 my-4 ">
+                    <h4
+                      class="text-xl absolute -left-16 top-4 bg-red-600 p-4 text-white w-10/12"
+                    >
+                      এমবিবিএস ২০২০-২১ শিক্ষাবর্ষের ভর্তি পরীক্ষায় প্রথম স্থান
+                      অর্জন করেছেন পাবনার মেয়ে মিশরী মুনমুন। তিনি পাবনা
+                      মেডিক্যাল কলেজ কেন্দ্র থেকে পরীক্ষায় অংশ নিয়েছিলেন।
+                    </h4>
+                    <div class="text-sm text-gray-500">
+                      এমবিবিএস ২০২০-২১ শিক্ষাবর্ষের ভর্তি পরীক্ষায় প্রথম স্থান
+                      অর্জন করেছেন পাবনার মেয়ে মিশরী মুনমুন।
+                    </div>
+                    <div class="text-sm text-gray-500 my-4">
+                      এমবিবিএস ২০২০-২১ শিক্ষাবর্ষের ভর্তি পরীক্ষায় প্রথম স্থান
+                      অর্জন করেছেন পাবনার মেয়ে মিশরী মুনমুন। তিনি পাবনা
+                      মেডিক্যাল কলেজ কেন্দ্র থেকে পরীক্ষায় অংশ নিয়েছিলেন।
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-6/12 px-2 my-2">
+                <div
+                  class="flex w-full border-b-2 py-2"
+                  v-for="n in 3"
+                  :key="n"
+                >
+                  <div class="figure relative">
+                    <img
+                      src="~/assets/images/dbc/play.png"
+                      alt=""
+                      class="w-full"
+                    />
+                  </div>
+                  <div class="detail px-2">
+                    <div class="flex">
+                      <p
+                        class=" text-gray-500 font-medium text-base  flex uppercase"
+                      >
+                        Covid
+                      </p>
+                    </div>
+                    <h4 class="text-base font-medium text-gray-700">
+                      নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+                    </h4>
+                    <p class="my-4 text-sm text-gray-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 inline-block"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        /></svg
+                      >Tuesday, June 29, 2021
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 2nd last  -->
+    <section class="slide-section my-4">
+      <div class="container mx-auto ">
+        <div class="w-12/12 px-2 my-2 ">
+          <div>
+            <Heading />
+          </div>
+          <div class="flex w-full">
+            <div class="flex w-full border-b-2 py-2" v-for="n in 4" :key="n">
+              <div class="figure relative">
+                <img
+                  src="~/assets/images/dbc/play.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+              <div class="detail px-2">
+                <div class="flex">
+                  <p
+                    class=" text-gray-500 font-medium text-base  flex uppercase"
+                  >
+                    Covid
+                  </p>
+                </div>
+                <h4 class="text-base font-medium text-gray-700">
+                  নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+                </h4>
+                <p class="my-4 text-sm text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 inline-block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    /></svg
+                  >Tuesday, June 29, 2021
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -628,6 +718,9 @@ import ArticleTop from "@/components/article/ArticleTop";
 import ArticleTopLeft from "@/components/article/ArticleTopLeft";
 import ArticleLeftList from "@/components/sidebar/ArticleLeftList";
 import ArticleRightList from "@/components/sidebar/ArticleRightList";
+import MostPopular from "@/components/sidebar/MostPopular";
+import ContactUs from "@/components/sidebar/ContactUs";
+
 import AdvertiseItem from "@/components/Advertisement/AdvertiseItem";
 import ArticleHeadingList from "@/components/sidebar/ArticleHeadingList";
 import Heading from "@/components/heading/Heading";
@@ -640,7 +733,9 @@ export default {
     ArticleRightList,
     AdvertiseItem,
     ArticleHeadingList,
-    Heading
+    Heading,
+    MostPopular,
+    ContactUs
   }
 };
 </script>

@@ -5,7 +5,7 @@
     <!-- banner  -->
     <AdvertiseItem />
     <!-- navigation  -->
-    <Navigation />
+    <!-- <Navigation /> -->
   </header>
 </template>
 <script>

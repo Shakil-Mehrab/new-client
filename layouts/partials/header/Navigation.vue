@@ -7,7 +7,11 @@
         >
           <div class="logo">
             <div class="p-4 ">
-              <img src="~/assets/images/dbc/logo.PNG" alt="" class="w-full" />
+              <img
+                src="@/assets/images/dbc/logo-white.PNG"
+                alt=""
+                class="w-full"
+              />
             </div>
           </div>
           <div class="category">

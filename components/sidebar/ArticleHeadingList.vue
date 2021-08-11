@@ -35,9 +35,9 @@
           </div>
         </div>
       </div>
-      <div class="number">
+      <!-- <div class="number">
         <span class="text-6xl font-medium text-gray-500">1</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

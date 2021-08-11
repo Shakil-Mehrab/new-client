@@ -1,6 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap'); */
+
 .subscribe-bg-img {
     background-image: url("@/assets/images/dbc/bg.png");
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
+}
+
+body {
+    /* font-family: 'Baloo Da 2', cursive; */
 }
