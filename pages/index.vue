@@ -1,5 +1,39 @@
 <template>
   <main>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <ul
+        role="list"
+        class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+      >
+        <li class="relative" v-for="n in 4" :key="n">
+          <div
+            class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
+              alt=""
+              class="object-cover pointer-events-none group-hover:opacity-75"
+            />
+            <button type="button" class="absolute inset-0 focus:outline-none">
+              <span class="sr-only">View details for IMG_4985.HEIC</span>
+            </button>
+          </div>
+          <p
+            class="mt-2 block text-sm font-medium text-gray-900 truncate pointer-events-none"
+          >
+            IMG_4985.HEIC
+          </p>
+          <p
+            class="block text-sm font-medium text-gray-500 pointer-events-none"
+          >
+            3.9 MB
+          </p>
+        </li>
+
+        <!-- More files... -->
+      </ul>
+    </div>
     <!-- top section  -->
     <section class="top-news-section my-4">
       <div class="container mx-auto">
@@ -17,7 +51,7 @@
       </div>
     </section>
     <!-- covid section  -->
-    <!-- <section class="slide-section my-4">
+    <section class="slide-section my-4">
       <div class="container mx-auto ">
         <div class="bg-gray-100 p-4">
           <div class="w-10/12 mx-auto">
@@ -68,7 +102,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- banner  -->
     <AdvertiseItem />
     <!-- International  -->
@@ -76,7 +110,9 @@
       <div class="container mx-auto">
         <div class="flex flex-wrap w-full">
           <div class="left-side md:w-8/12 px-2 my-2">
-            <Heading />
+            <div>
+              <Heading title="আন্তর্জাতিক" />
+            </div>
             <div class="md:flex w-full flex-wrap">
               <div class="md:w-6/12 my-2 pr-2">
                 <ArticleTopLeft />
@@ -93,7 +129,7 @@
                   class="absolute-part absolute -top-12 bg-gray-100 border m-4 p-4"
                 >
                   <h4 class="text-4xl text-gray-700">
-                    আন্তর্জাতিক
+                    জেলার খবর
                   </h4>
                 </div>
               </div>
@@ -142,7 +178,9 @@
       <div class="container mx-auto">
         <div class="md:flex flex-wrap w-full">
           <div class="md:w-8/12 px-2 my-2">
-            <Heading />
+            <div>
+              <Heading title="অনুষ্ঠান সমারোহ" />
+            </div>
             <div class="md:flex flex-wrap w-full">
               <div class="left-most md:w-8/12 my-2 pr-2">
                 <ArticleTop />
@@ -153,9 +191,11 @@
             </div>
           </div>
           <div class="md:w-4/12 px-2 my-2 relative">
-            <ContactUs />
+            <div>
+              <ContactUs />
+            </div>
             <div class="w-full my-2">
-              <Heading />
+              <Heading title="Trending Poll" />
               <div class="w-full">
                 <div class="bg-white p-2 rounded-md shadow-md border">
                   <div class="figure">
@@ -214,7 +254,7 @@
       <div class="container mx-auto py-8 ">
         <div class="w-full px-2">
           <div class="categroy-heading flex w-full my-4  items-baseline">
-            <div class="heading text-4xl text-white">আন্তর্জাতিক</div>
+            <div class="heading text-4xl text-white">বিবিধ</div>
             <div
               class="cat-side-border bg-gray-800 w-full h-1 rounded-md mx-4"
             ></div>
@@ -283,10 +323,10 @@
     <!-- advertisement  -->
     <AdvertiseItem />
     <!-- Special news  -->
-    <!-- <section class="spcial-news my-4">
+    <section class="spcial-news my-4">
       <div class="container mx-auto">
         <div class="w-full px-2">
-          <Heading />
+          <Heading title="স্পেশ্যাল রিপোর্ট" />
         </div>
         <div class="news-section flex w-full px-2">
           <div class="left-most w-6/12 my-2 p-16 bg-gray-100">
@@ -334,7 +374,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- four div  -->
     <section class="slide-section my-4">
       <div class="container mx-auto ">
@@ -450,7 +490,7 @@
         <div class="flex w-full">
           <div class="w-8/12 px-2 my-2 ">
             <div>
-              <Heading />
+              <Heading title="রাজনীতিক" />
             </div>
             <div class="flex w-full border-b-2 py-2" v-for="n in 6" :key="n">
               <div class="figure relative">
@@ -492,7 +532,7 @@
           </div>
           <div class="w-4/12 px-2 my-2 ">
             <div>
-              <Heading />
+              <Heading title="ট্রেন্ডিং নিউজ" />
             </div>
             <MostPopular />
 
@@ -511,7 +551,7 @@
     <section class="slide-section my-4">
       <div class="container mx-auto ">
         <div>
-          <Heading />
+          <Heading title="Special News" />
         </div>
         <div class="flex w-full justify-center items-center">
           <div
@@ -561,11 +601,15 @@
       <div class="container mx-auto">
         <div class="flex w-full">
           <div class="left-side w-4/12 px-2 my-2" v-for="n in 2" :key="n">
-            <Heading />
+            <div>
+              <Heading title="Lifestyle" />
+            </div>
             <ArticleTopLeft />
           </div>
           <div class="right-side w-4/12 px-2 my-2 relative">
-            <Heading />
+            <div>
+              <Heading title="Entertainment" />
+            </div>
             <div class="figure my-4 text-right relative">
               <img
                 src="@/assets/images/dbc/addlong.png"
@@ -588,7 +632,7 @@
         <div class="flex w-full justify-center">
           <div class="w-8/12 px-2 my-2 ">
             <div>
-              <Heading />
+              <Heading title="অভিমতি" />
             </div>
             <div class="flex w-full">
               <div class="w-6/12 px-2 my-2 ">
@@ -661,13 +705,9 @@
         </div>
       </div>
     </section>
-    <!-- 2nd last  -->
     <section class="slide-section my-4">
       <div class="container mx-auto ">
         <div class="w-12/12 px-2 my-2 ">
-          <div>
-            <Heading />
-          </div>
           <div class="flex w-full">
             <div class="flex w-full border-b-2 py-2" v-for="n in 4" :key="n">
               <div class="figure relative">
