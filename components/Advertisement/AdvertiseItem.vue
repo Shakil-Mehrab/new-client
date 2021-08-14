@@ -1,8 +1,8 @@
 <template>
-  <section class="banner my-4">
-    <div class="container mx-auto">
+  <section class="banner my-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center">
-        <div class="max-w-6xl px-4 my-4">
+        <div class="w-full md:max-w-6xl my-4">
           <img src="~/assets/images/dbc/banner.png" alt="" class="full" />
         </div>
       </div>

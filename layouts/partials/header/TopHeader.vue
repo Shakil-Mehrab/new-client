@@ -1,6 +1,6 @@
 <template>
   <section class="top-header my-2 shadow-sm">
-    <div class="container mx-auto">
+    <!-- <div class="container mx-auto">
       <div class="flex justify-between items-center h-12">
         <div class="flex">
           <div class="p-4">
@@ -55,6 +55,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
