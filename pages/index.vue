@@ -4,7 +4,7 @@
     <section class="top-news-section my-8">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="xl:flex flex-wrap w-full">
-          <div class="w-full xl:w-10/12 my-4">
+          <div class="w-full md:w-10/12 my-4">
             <div class="md:flex flex-wrap">
               <div class="w-full md:w-4/12">
                 <ArticleLeftList />
@@ -14,65 +14,62 @@
               </div>
             </div>
           </div>
-          <div class="w-full xl:w-2/12 my-4">
+          <div class="w-full md:w-2/12 my-4">
             <ArticleHeadingList />
           </div>
         </div>
       </div>
     </section>
     <!-- covid section  -->
-    <!-- <section class="slide-section my-4">
-      <div class="container mx-auto ">
+    <section class="slide-section my-4">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gray-100 p-4">
           <div class="w-10/12 mx-auto">
-            <div class="flex w-full justify-center items-center">
-              <div class="left-side w-3/12 px-2 my-2">
-                <div class="fugure">
-                  <img
-                    src="~/assets/images/dbc/covid.PNG"
-                    alt=""
-                    class="w-full"
-                  />
-                </div>
+            <div
+              class="relative grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-5 xl:grid-cols-5 xl:gap-x-8 border-b-2"
+            >
+              <div class="fugure">
+                <img
+                  src="~/assets/images/dbc/covid.PNG"
+                  alt=""
+                  class="w-full "
+                />
               </div>
-              <div class="right-side w-9/12 px-2 my-2">
-                <div class="flex w-full">
-                  <div class="detail px-2" v-for="n in 4" :key="n">
-                    <p class="text-base font-medium text-gray-500">
-                      <span class="bg-red-600 w-4 h-1 inline-block"></span>
-                      <span class="text-red-600 uppercase">Covid</span>
-                    </p>
-                    <h4 class="text-base font-medium text-gray-700">
-                      নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-                    </h4>
-                    <p class="text-sm text-gray-500">
-                      নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ. নারীর শরীরে
-                      পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-                    </p>
-                    <p class="my-4 text-sm text-gray-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6 inline-block"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        /></svg
-                      >Tuesday, June 29, 2021
-                    </p>
-                  </div>
-                </div>
+
+              <div class="detail px-2" v-for="n in 4" :key="n">
+                <p class="text-base font-medium text-gray-500">
+                  <span class="bg-red-600 w-4 h-1 inline-block"></span>
+                  <span class="text-red-600 uppercase">Covid</span>
+                </p>
+                <h4 class="text-base font-medium text-gray-700">
+                  নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+                </h4>
+                <p class="text-sm text-gray-500">
+                  নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ. নারীর শরীরে
+                  পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+                </p>
+                <p class="my-4 text-sm text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 inline-block"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    /></svg
+                  >Tuesday, June 29, 2021
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- banner  -->
     <AdvertiseItem />
     <!-- International responsive -->
@@ -112,8 +109,8 @@
       </div>
     </section>
     <!-- subscribe  -->
-    <section class="Subscribe my-4">
-      <div class="container mx-auto">
+    <section class="subscribe my-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="subscribe-bg-img bg-red-600 rounded-xl overflow-hidden">
           <div class=" flex flex-wrap items-center px-12 py-12 w-full">
             <div class="md:w-6/12 my-2 px-2">
@@ -126,10 +123,10 @@
               </p>
             </div>
             <div class="w-full md:w-6/12 my-2 px-2">
-              <div class="flex items-center w-full">
+              <div class="w-full sm:flex items-center">
                 <input
                   type="text"
-                  class="w-full h-12 mx-2 rounded-md bg-red-500 text-white px-4 focus:border-none focus:outline-none"
+                  class="w-full h-12 sm:mx-2 my-2 rounded-md bg-red-500 text-white px-4 focus:border-none focus:outline-none"
                   placeholder="Enter Your Email"
                 />
                 <button
@@ -144,24 +141,24 @@
       </div>
     </section>
     <!-- Ceremony  -->
-    <section class="ceremony my-4">
-      <div class="container mx-auto">
+    <section class="ceremony my-8">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="md:flex flex-wrap w-full">
-          <div class="md:w-8/12 px-2 my-2">
-            <div>
+          <div class="md:w-8/12 my-2">
+            <div class="my-8">
               <Heading title="অনুষ্ঠান সমারোহ" />
             </div>
             <div class="md:flex flex-wrap w-full">
-              <div class="left-most md:w-8/12 my-2 pr-2">
+              <div class="w-full xl:w-8/12 xl:pr-2">
                 <ArticleTop />
               </div>
-              <div class="md:w-4/12 px-2 my-16 md:my-2">
+              <div class="w-full xl:w-4/12 px-2 my-16 xl:my-2">
                 <ArticleHeadingList />
               </div>
             </div>
           </div>
-          <div class="md:w-4/12 px-2 my-2 relative">
-            <div>
+          <div class="md:w-4/12 md:pl-2 my-2 relative">
+            <div class="">
               <ContactUs />
             </div>
             <div class="w-full my-2">
@@ -220,9 +217,9 @@
       </div>
     </section>
     <!-- video  -->
-    <section class="video my-4 bg-gray-900">
-      <div class="container mx-auto py-8 ">
-        <div class="w-full px-2">
+    <section class="video my-8 bg-gray-900">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 ">
+        <div class="w-full">
           <div class="categroy-heading flex w-full my-4  items-baseline">
             <div class="heading text-4xl text-white">বিবিধ</div>
             <div
@@ -230,8 +227,8 @@
             ></div>
           </div>
         </div>
-        <div class="flex w-full items-center">
-          <div class="left-side md:w-4/12 px-2 my-2">
+        <div class="flex flex-wrap w-full items-center">
+          <div class="w-full md:w-4/12 my-2">
             <p class="text-base font-medium text-gray-500">
               <span class="bg-red-600 w-4 h-1 inline-block"></span>
               <span class="text-red-600">PLATFORM-TEST</span>
@@ -259,7 +256,7 @@
               উদ্বোধনের একদিন পরও চালু হয়নি করোনার ফিল্ড হাসপাতাল
             </p>
           </div>
-          <div class="right-side md:w-8/12 px-2 my-2">
+          <div class="w-full md:w-8/12 my-2">
             <div class="vidow-section rounded-md overflow-hidden">
               <iframe
                 width="100%"
@@ -273,8 +270,10 @@
             </div>
           </div>
         </div>
-        <div class="flex w-full">
-          <div class="w-full px-2 my-2" v-for="n in 4" :key="n">
+        <div
+          class="relative grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 border-b-2 "
+        >
+          <div class="w-full my-2" v-for="n in 4" :key="n">
             <div class="vidow-section rounded-md overflow-hidden">
               <iframe
                 width="100%"
