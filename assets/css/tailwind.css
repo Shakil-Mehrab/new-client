@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.title {
+    @apply text-gray-700 text-base leading-tight transition duration-500 ease-in-out tracking-normal
+}
+
+.title:hover {
+    @apply text-red-700
+}
+
+.title-large {
+    @apply text-gray-700 text-xl text-center leading-tight transition duration-500 ease-in-out tracking-normal
+}
+
+.detail {
+    @apply text-sm text-gray-500 tracking-normal mt-2 leading-tight
+}
+
+.date {
+    @apply text-sm text-gray-500 tracking-normal leading-tight
+}
+
+@media (max-width: 992px) {
+    .title {
+        @apply my-2
+    }
+}
+
+@media (max-width: 640px) {
+    .detail {
+        @apply hidden
+    }
+    .title {
+        @apply my-2 text-sm font-semibold
+    }
+    .title-large {
+        @apply text-sm font-semibold
+    }
+}

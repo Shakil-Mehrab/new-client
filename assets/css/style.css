@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Hind+Siliguri&display=swap'); */
 
 .subscribe-bg-img {
     background-image: url("@/assets/images/dbc/bg.png");
@@ -8,5 +8,5 @@
 }
 
 body {
-    /* font-family: 'Baloo Da 2', cursive; */
+    font-family: 'Hind Siliguri', sans-serif;
 }
