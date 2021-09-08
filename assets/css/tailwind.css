@@ -35,6 +35,6 @@
         @apply my-2 text-sm font-semibold
     }
     .title-large {
-        @apply text-sm font-semibold
+        @apply text-sm font-semibold px-2 text-left
     }
 }

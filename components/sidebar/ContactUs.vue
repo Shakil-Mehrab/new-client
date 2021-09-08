@@ -1,7 +1,7 @@
 <template>
   <div class="w-full my-2">
     <div class="my-8">
-      <Heading />
+      <Devider />
     </div>
     <div class="grid grid-rows-2 grid-cols-2 gap-2">
       <div class="bg-red-600 p-4 rounded-md" v-for="n in 4" :key="n">

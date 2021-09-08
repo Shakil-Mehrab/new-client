@@ -2,18 +2,20 @@
   <div class="flex flex-wrap 2md:block">
     <div
       class="w-6/12 py-1  md:py-3 odd:pr-1 even:pl-1 md:odd:pr-3 md:even:pl-3 2md:w-full 2md:even:pl-0 2md:odd:pr-0 2md:border-b 2md:block 2md:first:pt-0"
-      v-for="n in 5"
+      v-for="n in news"
       :key="n"
     >
       <a href="">
         <div
           class="grid grid-cols-12 gap-2 rounded-md shadow-md 2md:shadow-none"
         >
-          <div class="col-span-12 2md:col-span-4">
+          <div
+            class="col-span-12 overflow-hidden  2md:col-span-4 rounded-t-md sm:rounded-md"
+          >
             <img
               src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
               alt=""
-              class="w-full rounded-md"
+              class="w-full"
             />
           </div>
           <div class="col-span-12 p-2 2md:col-span-8 2md:p-0">
@@ -50,6 +52,13 @@ export default {
       required: false,
       type: Boolean,
       default: false,
+    },
+  },
+  props: {
+    news: {
+      required: false,
+      type: Number,
+      default: 5,
     },
   },
 };

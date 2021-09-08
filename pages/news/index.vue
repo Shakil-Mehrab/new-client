@@ -3,13 +3,13 @@
     <section>
       <div class="container mx-auto">
         <div class="flex">
-          <div class="w-8/12 my-2 px-2">
+          <div class="w-8/12 px-2 my-2">
             <div class="w-full">
               <p class="text-base font-medium text-gray-500">
-                <span class="bg-red-600 w-4 h-1 inline-block"></span>
+                <span class="inline-block w-4 h-1 bg-red-600"></span>
                 <span class="text-red-600">PLATFORM-TEST</span>
               </p>
-              <h4 class="text-2xl font-medium text-gray-700 my-4">
+              <h4 class="my-4 text-2xl font-medium text-gray-700">
                 নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
               </h4>
               <p class="my-4 text-gray-400">
@@ -17,14 +17,14 @@
               </p>
             </div>
             <div class="flex justify-between w-full">
-              <div class="flex items-center ">
+              <div class="flex items-center">
                 <img src="@/assets/images/dbc/circle.png" alt="" />
                 <div class="mx-2">
                   <h4 class="text-xl font-medium">Dbc News</h4>
                   <p class="text-base font-medium text-gray-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 inline-block"
+                      class="inline-block w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -42,13 +42,13 @@
               <div class="">
                 <ul class="flex">
                   <li
-                    class="bg-gray-100 rounded-md mx-2 p-2"
+                    class="p-2 mx-2 bg-gray-100 rounded-md"
                     v-for="n in 2"
                     :key="n"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 inline-block"
+                      class="inline-block w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -66,7 +66,7 @@
             </div>
             <div class="w-full my-4">
               <img src="@/assets/images/dbc/detail.png" alt="" class="w-full" />
-              <p class="text-sm text-gray-500 mt-4">
+              <p class="mt-4 text-sm text-gray-500">
                 দেশে গত ২৪ ঘণ্টায় করোনাভাইরাসে আক্রান্ত হয়ে মারা গেছেন ২৪৫ জন। এ
                 নিয়ে করোনায় দেশে মোট মৃতের সংখ্যা দাঁড়িয়েছে ২২ হাজার ৮৯৭ জনে। এ
                 সময় নতুন করে এই ভাইরাসে শনাক্ত হয়েছেন ১১ হাজার ৪৬৩ জন। এ নিয়ে
@@ -104,7 +104,7 @@
             <div>
               <ul class="flex">
                 <li
-                  class="py-4 px-8 bg-gray-100 mx-2 rounded-md border-2"
+                  class="px-8 py-4 mx-2 bg-gray-100 border-2 rounded-md"
                   v-for="n in 3"
                   :key="n"
                 >
@@ -124,15 +124,13 @@
                   class="w-full"
                 />
               </div>
-              <div class="detail my-2">
+              <div class="my-2 detail">
                 <div class="flex items-center">
-                  <p class="my-4 text-gray-500 text-sm uppercase">
-                    Covid
-                  </p>
-                  <p class="m-4 text-sm text-gray-500 flex items-center">
+                  <p class="my-4 text-sm text-gray-500 uppercase">Covid</p>
+                  <p class="flex items-center m-4 text-sm text-gray-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 inline-block"
+                      class="inline-block w-6 h-6"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -157,15 +155,15 @@
               </div>
             </div>
             <div class="w-full my-4">
-              <div class="flex w-full border-b-2 py-2" v-for="n in 4" :key="n">
-                <div class="figure relative w-3/12 rounded-md overflow-hidden">
+              <div class="flex w-full py-2 border-b-2" v-for="n in 4" :key="n">
+                <div class="relative w-3/12 overflow-hidden rounded-md figure">
                   <img
                     src="~/assets/images/dbc/play.png"
                     alt=""
                     class="w-full"
                   />
                 </div>
-                <div class="detail px-2 w-9/12">
+                <div class="w-9/12 px-2 detail">
                   <h4 class="text-base font-medium text-gray-700">
                     নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
                   </h4>
@@ -176,21 +174,21 @@
         </div>
       </div>
     </section>
-    <section class="slide-section my-4">
-      <div class="container mx-auto ">
+    <section class="my-4 slide-section">
+      <div class="container mx-auto">
         <div>
-          <Heading />
+          <Devider />
         </div>
-        <div class="flex w-full flex-wrap justify-center items-center">
+        <div class="flex flex-wrap items-center justify-center w-full">
           <div class="w-6/12 px-4 my-2" v-for="n in 8" :key="n">
             <div
-              class="flex justify-between items-center p-4 mt-2 border rounded-md shadow-md "
+              class="flex items-center justify-between p-4 mt-2 border rounded-md shadow-md "
             >
-              <div class="detail my-2">
+              <div class="my-2 detail">
                 <p class="my-2 text-sm text-gray-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 inline-block"
+                    class="inline-block w-6 h-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -208,32 +206,30 @@
                 </h4>
               </div>
               <div>
-                <span class="text-gray-700 text-base">(District News)</span>
+                <span class="text-base text-gray-700">(District News)</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="slide-section my-4">
-      <div class="container mx-auto ">
+    <section class="my-4 slide-section">
+      <div class="container mx-auto">
         <div>
-          <Heading />
+          <Devider />
         </div>
-        <div class="flex w-full flex-wrap justify-center items-center">
+        <div class="flex flex-wrap items-center justify-center w-full">
           <div
             class="w-3/12 px-4 my-2 first:pl-2 last:pr-2"
             v-for="n in 8"
             :key="n"
           >
-            <div class="figure relative">
+            <div class="relative figure">
               <img src="~/assets/images/dbc/play.png" alt="" class="w-full" />
             </div>
-            <div class="detail my-2">
+            <div class="my-2 detail">
               <div class="flex">
-                <p class="text-gray-500 text-sm uppercase">
-                  Covid
-                </p>
+                <p class="text-sm text-gray-500 uppercase">Covid</p>
               </div>
               <h4 class="text-base font-medium text-gray-700">
                 নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
@@ -241,7 +237,7 @@
               <p class="my-4 text-sm text-gray-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 inline-block"
+                  class="inline-block w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -272,7 +268,7 @@ import ContactUs from "@/components/sidebar/ContactUs";
 export default {
   components: {
     MostPopular,
-    ContactUs
-  }
+    ContactUs,
+  },
 };
 </script>

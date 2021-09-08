@@ -5,11 +5,11 @@
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
-            <div class="grid grid-cols-12 gap-1 sm:gap-6">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
                 class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
-                <ArticleLeftList :detail="true" />
+                <ArticleListWithImage :news="4" :detail="true" />
               </div>
               <div
                 class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
@@ -20,12 +20,31 @@
           </div>
           <!-- col 4  -->
           <div class="order-3 w-full xl:w-2/12">
-            <ArticleHeadingList />
+            <HeadingList :news="5" />
           </div>
         </div>
       </div>
     </div>
-
+    <!-- banner  -->
+    <AdvertiseItem />
+    <!-- English -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="English" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <EnglishArtilce :news="5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- covid section  -->
     <section class="mt-16 slide-section">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
@@ -78,46 +97,26 @@
     </section>
     <!-- banner  -->
     <AdvertiseItem />
-    <!-- International responsive -->
+    <!-- International -->
     <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-4 py-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
-            <div class="grid grid-cols-12 gap-6">
+            <div class="my-8">
+              <Devider title="আন্তর্জাতিক" />
+            </div>
+            <div class="grid grid-cols-12 gap-1 md:gap-6">
               <div class="col-span-12 rounded-md 2md:col-span-6">
                 <ArticleTopLeft />
               </div>
-              <div class="col-span-12 sm:mt-12 2md:mt-0 2md:col-span-6">
-                <ArticleLeftList :detail="true" />
+              <div class="col-span-12 sm:mt-3 2md:mt-0 2md:col-span-6">
+                <ArticleListWithImage :detail="true" />
               </div>
             </div>
           </div>
           <!-- col 4  -->
-          <div class="order-3 w-full xl:w-4/12">
-            <ArticleHeadingList />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- International responsive -->
-    <section class="my-8 international">
-      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="flex flex-wrap w-full">
-          <div class="w-full lg:w-8/12">
-            <div class="my-8">
-              <Heading title="আন্তর্জাতিক" />
-            </div>
-            <div class="flex-wrap w-full md:flex">
-              <div class="w-full mb-4 md:w-6/12">
-                <ArticleTopLeft />
-              </div>
-              <div class="w-full md:w-6/12 md:pl-4">
-                <ArticleRightList />
-              </div>
-            </div>
-          </div>
-          <div class="relative w-full my-16 lg:w-4/12 md:pl-4">
+          <div class="relative w-full mt-16 xl:w-4/12">
             <div class="p-4 border-4 border-gray-700 rounded-xl">
               <div class="flex justify-center">
                 <div
@@ -127,15 +126,15 @@
                 </div>
               </div>
               <div class="my-8">
-                <ArticleHeadingList />
+                <HeadingList :date="true" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- subscribe  -->
-    <section class="my-8 subscribe">
+    <section class="my-6 subscribe">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="overflow-hidden bg-red-600 subscribe-bg-img rounded-xl">
           <div class="flex flex-wrap items-center w-full px-12 py-12">
@@ -166,84 +165,56 @@
         </div>
       </div>
     </section>
-    <!-- Ceremony  -->
-    <section class="my-8 ceremony">
-      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="flex-wrap w-full md:flex">
-          <div class="my-2 md:w-8/12">
+    <!-- Occation -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full xl:w-8/12">
             <div class="my-8">
-              <Heading title="অনুষ্ঠান সমারোহ" />
+              <Devider title="অনুষ্ঠান সমারোহ" />
             </div>
-            <div class="flex-wrap w-full md:flex">
-              <div class="w-full xl:w-8/12 xl:pr-2">
+            <div class="grid grid-cols-12 gap-1 md:gap-6">
+              <div class="col-span-12 rounded-md 2md:col-span-8">
                 <ArticleTop />
               </div>
-              <div class="w-full px-2 my-16 xl:w-4/12 xl:my-2">
-                <ArticleHeadingList />
+              <div class="col-span-12 sm:mt-3 2md:mt-0 2md:col-span-4">
+                <HeadingList :date="true" />
               </div>
             </div>
           </div>
-          <div class="relative my-2 md:w-4/12 md:pl-2">
+          <!-- col 4  -->
+          <div class="relative w-full xl:w-4/12">
             <div class="">
               <ContactUs />
             </div>
             <div class="w-full my-2">
-              <Heading title="Trending Poll" />
+              <Devider title="Trending Poll" />
               <div class="w-full">
-                <div class="p-2 bg-white border rounded-md shadow-md">
-                  <div class="figure">
-                    <img
-                      src="@/assets/images/dbc/cow.png"
-                      alt=""
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="p-4 detail">
-                    <p class="text-base font-medium text-gray-500">
-                      <span class="">PLATFORM-TEST</span>
-                    </p>
-                    <h4 class="my-4 text-base font-medium text-gray-700">
-                      নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-                    </h4>
-                    <p class="text-base font-medium text-gray-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="inline-block w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                        /></svg
-                      >Tuesday, June 29, 2021
-                    </p>
-                    <div class="my-2">
-                      <div class="w-full p-2 my-2 bg-gray-100 rounded-md">
-                        <input type="radio" value="India" /> India
-                      </div>
-                      <div class="w-full p-2 my-2 bg-gray-100 rounded-md">
-                        <input type="radio" value="Banglasesh" /> Banglasesh
-                      </div>
-                      <button
-                        class="flex px-4 ml-auto text-base font-medium uppercase border-2 border-red-600 rounded-md "
-                      >
-                        Vote
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <TrendingPoll />
               </div>
             </div>
           </div>
+          <!-- <div class="relative w-full my-16 xl:w-4/12">
+            <div class="p-4 border-4 border-gray-700 rounded-xl">
+              <div class="flex justify-center">
+                <div
+                  class="absolute p-4 m-4 bg-gray-100 border absolute-part -top-12"
+                >
+                  <h4 class="text-4xl text-gray-700">জেলার খবর</h4>
+                </div>
+              </div>
+              <div class="my-8">
+                <HeadingList />
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
-    </section>
+    </div>
+
     <!-- video  -->
-    <section class="my-8 bg-gray-900 video">
+    <section class="my-6 bg-gray-900 video">
       <div class="container px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div class="w-full">
           <div class="flex items-baseline w-full my-4 categroy-heading">
@@ -321,7 +292,7 @@
     <section class="my-8 spcial-news">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="w-full">
-          <Heading title="স্পেশ্যাল রিপোর্ট" />
+          <Devider title="স্পেশ্যাল রিপোর্ট" />
         </div>
         <div class="flex flex-wrap w-full news-section">
           <div class="w-full my-2 bg-gray-100 md:w-6/12">
@@ -521,7 +492,7 @@
         <div class="flex flex-wrap w-full">
           <div class="w-full my-2 md:w-8/12 md:pr-4">
             <div class="my-8">
-              <Heading title="রাজনীতিক" />
+              <Devider title="রাজনীতিক" />
             </div>
             <ul
               role="list"
@@ -589,7 +560,7 @@
           </div>
           <div class="w-full my-2 md:w-4/12">
             <div class="my-8">
-              <Heading title="ট্রেন্ডিং নিউজ" />
+              <Devider title="ট্রেন্ডিং নিউজ" />
             </div>
             <div class="w-full rounded-md shadow-md">
               <div class="flex">
@@ -677,7 +648,7 @@
     <section class="my-8 special">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="my-8">
-          <Heading title="Special News" />
+          <Devider title="Special News" />
         </div>
         <ul
           role="list"
@@ -732,7 +703,7 @@
         <div class="flex flex-wrap w-full">
           <div class="w-full md:w-4/12" v-for="n in 2" :key="n">
             <div class="my-8 md:pr-4">
-              <Heading title="Lifestyle" />
+              <Devider title="Lifestyle" />
             </div>
             <div class="md:pr-4">
               <ArticleTopLeft />
@@ -740,7 +711,7 @@
           </div>
           <div class="relative w-full md:w-4/12">
             <div class="my-8">
-              <Heading title="Entertainment" />
+              <Devider title="Entertainment" />
             </div>
             <ul
               role="list"
@@ -774,7 +745,7 @@
         <div class="flex justify-center w-full">
           <div class="w-full my-2 md:w-8/12">
             <div class="my-8">
-              <Heading title="অভিমতি" />
+              <Devider title="অভিমতি" />
             </div>
             <div class="flex flex-wrap w-full">
               <div class="w-full my-2 md:w-6/12 md:pr-2">
@@ -925,26 +896,29 @@
 <script>
 import ArticleTop from "@/components/article/ArticleTop";
 import ArticleTopLeft from "@/components/article/ArticleTopLeft";
-import ArticleLeftList from "@/components/sidebar/ArticleLeftList";
+import ArticleListWithImage from "@/components/sidebar/ArticleListWithImage";
 import ArticleRightList from "@/components/sidebar/ArticleRightList";
+import TrendingPoll from "@/components/sidebar/TrendingPoll";
 import MostPopular from "@/components/sidebar/MostPopular";
 import ContactUs from "@/components/sidebar/ContactUs";
-
 import AdvertiseItem from "@/components/Advertisement/AdvertiseItem";
-import ArticleHeadingList from "@/components/sidebar/ArticleHeadingList";
-import Heading from "@/components/heading/Heading";
+import HeadingList from "@/components/sidebar/HeadingList";
+import Devider from "@/components/devider/Devider";
+import EnglishArtilce from "@/components/english/EnglishArtilce";
 
 export default {
   components: {
     ArticleTop,
     ArticleTopLeft,
-    ArticleLeftList,
+    ArticleListWithImage,
     ArticleRightList,
     AdvertiseItem,
-    ArticleHeadingList,
-    Heading,
+    HeadingList,
     MostPopular,
     ContactUs,
+    TrendingPoll,
+    Devider,
+    EnglishArtilce,
   },
 };
 </script>
