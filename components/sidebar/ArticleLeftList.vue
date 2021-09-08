@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap 2md:block">
     <div
-      class="w-6/12 py-3  odd:pr-3 even:pl-3 2md:w-full 2md:even:pl-0 2md:odd:pr-0 2md:border-b 2md:block 2md:first:pt-0"
+      class="w-6/12 py-1  md:py-3 odd:pr-1 even:pl-1 md:odd:pr-3 md:even:pl-3 2md:w-full 2md:even:pl-0 2md:odd:pr-0 2md:border-b 2md:block 2md:first:pt-0"
       v-for="n in 5"
       :key="n"
     >

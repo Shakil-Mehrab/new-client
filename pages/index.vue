@@ -5,7 +5,7 @@
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
-            <div class="grid grid-cols-12 gap-6">
+            <div class="grid grid-cols-12 gap-1 sm:gap-6">
               <div
                 class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
