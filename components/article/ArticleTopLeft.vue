@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-full mb-6 rounded-md shadow-md sm:shadow-none">
     <a href="">
-      <div class="overflow-hidden rounded-t-md sm:rounded-md">
+      <div class="">
         <img
           src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
           alt=""

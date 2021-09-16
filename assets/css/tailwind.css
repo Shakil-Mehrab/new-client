@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .title {
-    @apply text-gray-700 text-base leading-tight transition duration-500 ease-in-out tracking-normal
+    @apply text-gray-700 text-base leading-normal transition duration-500 ease-in-out tracking-wider font-normal
 }
 
 .title:hover {
@@ -10,15 +10,23 @@
 }
 
 .title-large {
-    @apply text-gray-700 text-xl text-center leading-tight transition duration-500 ease-in-out tracking-normal
+    @apply text-gray-700 text-xl text-center leading-normal transition duration-500 ease-in-out tracking-wider font-medium
+}
+
+.title-large:hover {
+    @apply text-red-700
 }
 
 .detail {
-    @apply text-sm text-gray-500 tracking-normal mt-2 leading-tight
+    @apply text-sm text-gray-500 tracking-wider mt-2 leading-normal
 }
 
 .date {
-    @apply text-sm text-gray-500 tracking-normal leading-tight
+    @apply text-sm text-gray-500 tracking-wider leading-normal
+}
+
+img {
+    @apply rounded-md
 }
 
 @media (max-width: 992px) {
@@ -32,9 +40,12 @@
         @apply hidden
     }
     .title {
-        @apply my-2 text-sm font-semibold
+        @apply my-2 text-lg
     }
     .title-large {
-        @apply text-sm font-semibold px-2 text-left
+        @apply px-2 text-left text-xl
+    }
+    img {
+        @apply rounded-b-none
     }
 }

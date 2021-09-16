@@ -1,7 +1,7 @@
 <template>
   <div class="relative h-full mb-2 rounded-md shadow-md sm:mb-6 sm:shadow-none">
     <a href="">
-      <div class="overflow-hidden rounded-t-md sm:rounded-md">
+      <div class="">
         <img
           src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
           alt=""
@@ -33,7 +33,7 @@
           </div>
           <div class="mt-4 sm:my-8">
             <div class="order-2 title-large sm:order-1">
-              নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+              নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ t
             </div>
             <div class="flex px-2 space-x-2 sm:px-0 sm:justify-center">
               <Date />

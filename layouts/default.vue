@@ -2,7 +2,7 @@
   <fragment>
     <Header />
     <Nuxt />
-    <Footer />
+    <!-- <Footer /> -->
   </fragment>
 </template>
 <script>
@@ -12,7 +12,7 @@ import Footer from "@/layouts/partials/footer/Footer";
 export default {
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>

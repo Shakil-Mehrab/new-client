@@ -1,15 +1,12 @@
 <template>
-  <div class="w-full my-2">
-    <div class="my-8">
-      <Devider />
-    </div>
-    <div class="grid grid-rows-2 grid-cols-2 gap-2">
-      <div class="bg-red-600 p-4 rounded-md" v-for="n in 4" :key="n">
-        <div class="flex w-full items-center text-white">
-          <div class="icon bg-red-900 p-2 rounded-full">
+  <div class="w-full">
+    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+      <div class="p-4 bg-red-600 rounded-md" v-for="n in 4" :key="n">
+        <div class="flex items-center w-full text-white">
+          <div class="p-2 bg-red-900 rounded-full icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="w-6 h-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

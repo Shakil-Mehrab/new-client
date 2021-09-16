@@ -26,25 +26,6 @@
       </div>
     </div>
     <!-- banner  -->
-    <AdvertiseItem />
-    <!-- English -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
-        <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
-          <div class="w-full">
-            <div class="my-3 sm:my-6">
-              <Devider title="English" />
-            </div>
-            <div class="w-full">
-              <div class="">
-                <EnglishArtilce :news="5" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- covid section  -->
     <section class="mt-16 slide-section">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
@@ -95,15 +76,47 @@
         </div>
       </div>
     </section>
-    <!-- banner  -->
     <AdvertiseItem />
+    <!-- English -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="w-full">
+          <div class="my-3 sm:my-6">
+            <Devider title="English" />
+          </div>
+          <div class="w-full">
+            <div class="">
+              <EnglishArtilce :news="5" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banglasesh -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="Banglasesh" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- International -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
       <div class="px-4 py-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="আন্তর্জাতিক" />
             </div>
             <div class="grid grid-cols-12 gap-1 md:gap-6">
@@ -127,6 +140,117 @@
               </div>
               <div class="my-8">
                 <HeadingList :date="true" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- International -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="International" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sports -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="Sports" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner  -->
+    <AdvertiseItem class="md:hidden" />
+    <!-- Special News Event  -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="my-3 sm:my-6">
+          <Devider title="Special News Event" />
+        </div>
+        <div class="xl:space-x-6 xl:flex">
+          <div class="w-full xl:w-10/12">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
+              >
+                <ArticleTop />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Opinion -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="Opinion" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ceremony -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="Ceremony" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="my-3 sm:my-6">
+              <Devider title="Job" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSection :news="5" />
               </div>
             </div>
           </div>
@@ -171,7 +295,7 @@
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="অনুষ্ঠান সমারোহ" />
             </div>
             <div class="grid grid-cols-12 gap-1 md:gap-6">
@@ -185,30 +309,21 @@
           </div>
           <!-- col 4  -->
           <div class="relative w-full xl:w-4/12">
-            <div class="">
+            <div class="my-3 sm:my-6">
+              <Devider title="International" />
+            </div>
+            <div class="my-6">
               <ContactUs />
             </div>
             <div class="w-full my-2">
-              <Devider title="Trending Poll" />
+              <div class="my-3 sm:my-6">
+                <Devider title="Trending Poll" />
+              </div>
               <div class="w-full">
                 <TrendingPoll />
               </div>
             </div>
           </div>
-          <!-- <div class="relative w-full my-16 xl:w-4/12">
-            <div class="p-4 border-4 border-gray-700 rounded-xl">
-              <div class="flex justify-center">
-                <div
-                  class="absolute p-4 m-4 bg-gray-100 border absolute-part -top-12"
-                >
-                  <h4 class="text-4xl text-gray-700">জেলার খবর</h4>
-                </div>
-              </div>
-              <div class="my-8">
-                <HeadingList />
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -291,70 +406,10 @@
     <!-- Special news  -->
     <section class="my-8 spcial-news">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="w-full">
+        <div class="my-3 sm:my-6">
           <Devider title="স্পেশ্যাল রিপোর্ট" />
         </div>
-        <div class="flex flex-wrap w-full news-section">
-          <div class="w-full my-2 bg-gray-100 md:w-6/12">
-            <div class="p-2 md:p-16">
-              <button
-                class="flex px-4 text-base font-medium text-white uppercase bg-red-600 border-2 rounded-md "
-              >
-                Covid
-              </button>
-              <div class="my-4">
-                <h4 class="text-2xl font-medium text-gray-700">
-                  নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-                </h4>
-                <p class="my-4 text-sm text-gray-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="inline-block w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    /></svg
-                  >Tuesday, June 29, 2021
-                </p>
-                <p class="text-sm text-gray-500">
-                  দেশে করোনা সংক্রমণের ৫১৮তম দিনে আজ রবিবার (৭ আগস্ট), করোনা
-                  পরিস্থিতি নিয়ে স্বাস্থ্য অধিদপ্তর থেকে পাঠানো বিজ্ঞপ্তিতে
-                  জানানো হয়, গত ২৪ ঘণ্টায় সারা দেশে
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full my-2 md:w-6/12">
-            <ul
-              role="list"
-              class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-1 xl:gap-x-8"
-            >
-              <li class="relative">
-                <div
-                  class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-                    alt=""
-                    class="object-cover pointer-events-none  group-hover:opacity-75"
-                  />
-                  <button
-                    type="button"
-                    class="absolute inset-0 focus:outline-none"
-                  >
-                    <span class="sr-only">View details for IMG_4985.HEIC</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <SpecialReport />
       </div>
     </section>
     <!-- four div  -->
@@ -491,7 +546,7 @@
       <div class="container px-4 mx-auto lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full my-2 md:w-8/12 md:pr-4">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="রাজনীতিক" />
             </div>
             <ul
@@ -559,7 +614,7 @@
             </ul>
           </div>
           <div class="w-full my-2 md:w-4/12">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="ট্রেন্ডিং নিউজ" />
             </div>
             <div class="w-full rounded-md shadow-md">
@@ -647,7 +702,7 @@
     <!-- Dbc special  responsive-->
     <section class="my-8 special">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="my-8">
+        <div class="my-3 sm:my-6">
           <Devider title="Special News" />
         </div>
         <ul
@@ -702,7 +757,7 @@
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full md:w-4/12" v-for="n in 2" :key="n">
-            <div class="my-8 md:pr-4">
+            <div class="my-3 sm:my-6">
               <Devider title="Lifestyle" />
             </div>
             <div class="md:pr-4">
@@ -710,7 +765,7 @@
             </div>
           </div>
           <div class="relative w-full md:w-4/12">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="Entertainment" />
             </div>
             <ul
@@ -744,7 +799,7 @@
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-center w-full">
           <div class="w-full my-2 md:w-8/12">
-            <div class="my-8">
+            <div class="my-3 sm:my-6">
               <Devider title="অভিমতি" />
             </div>
             <div class="flex flex-wrap w-full">
@@ -905,6 +960,8 @@ import AdvertiseItem from "@/components/Advertisement/AdvertiseItem";
 import HeadingList from "@/components/sidebar/HeadingList";
 import Devider from "@/components/devider/Devider";
 import EnglishArtilce from "@/components/english/EnglishArtilce";
+import SpecialReport from "@/components/specialReport/SpecialReport";
+import ArtilceSection from "@/components/section/ArtilceSection";
 
 export default {
   components: {
@@ -919,6 +976,8 @@ export default {
     TrendingPoll,
     Devider,
     EnglishArtilce,
+    SpecialReport,
+    ArtilceSection,
   },
 };
 </script>
