@@ -6,11 +6,11 @@
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
-              <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              <!-- <div
+                class="order-2 col-span-12 sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
                 <ArticleListWithImage :news="4" :detail="true" />
-              </div>
+              </div> -->
               <div
                 class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
               >
@@ -19,20 +19,20 @@
             </div>
           </div>
           <!-- col 4  -->
-          <div class="order-3 w-full xl:w-2/12">
+          <!-- <div class="order-3 w-full xl:w-2/12">
             <HeadingList :news="5" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
     <!-- banner  -->
     <!-- covid section  -->
-    <section class="mt-16 slide-section">
+    <!-- <section class="mt-16 slide-section">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="p-4 bg-gray-100">
           <div class="w-10/12 mx-auto">
             <div
-              class="relative grid grid-cols-1 border-b-2  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-5 xl:grid-cols-5 xl:gap-x-8"
+              class="relative grid grid-cols-1 border-b-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-5 xl:grid-cols-5 xl:gap-x-8"
             >
               <div class="fugure">
                 <img
@@ -75,10 +75,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <AdvertiseItem />
+    </section> -->
+    <!-- <AdvertiseItem /> -->
     <!-- English -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-4 py-2 sm:px-0">
         <div class="w-full">
           <div class="my-3 sm:my-6">
@@ -91,14 +91,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Banglasesh -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-4 py-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Banglasesh" />
             </div>
             <div class="w-full">

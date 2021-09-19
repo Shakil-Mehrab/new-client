@@ -1,24 +1,25 @@
 {
-  "name": "news-admin",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
-  },
-  "devDependencies": {
-    "@nuxtjs/tailwindcss": "^4.2.1",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
-    "vue-fragment": "^1.5.2"
-  }
+    "name": "news-admin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.13.6",
+        "@tailwindcss/aspect-ratio": "^0.2.1",
+        "core-js": "^3.15.1",
+        "nuxt": "^2.15.7"
+    },
+    "devDependencies": {
+        "@nuxtjs/device": "^2.1.0",
+        "@nuxtjs/tailwindcss": "^4.2.1",
+        "autoprefixer": "^9.8.6",
+        "postcss": "^7.0.36",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
+        "vue-fragment": "^1.5.2"
+    }
 }

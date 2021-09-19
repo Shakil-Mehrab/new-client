@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Siyamrupali';
+  src: url('Siyamrupali.eot?#iefix') format('embedded-opentype'),
+    url('Siyamrupali.woff') format('woff'),
+    url('Siyamrupali.ttf') format('truetype'),
+    url('Siyamrupali.otf') format('truetype'),
+    url('Siyamrupali.svg#svgFontName') format('svg');
+}

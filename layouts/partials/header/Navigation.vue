@@ -1,12 +1,12 @@
 <template>
-  <section class="navigation my-2">
+  <section class="my-2 navigation">
     <div class="bg-red-600">
       <div class="container mx-auto">
         <div
-          class="flex justify-between items-center h-24 overflow-hidden text-white uppercase font-bold"
+          class="flex items-center justify-between h-24 overflow-hidden font-bold text-white uppercase "
         >
           <div class="logo">
-            <div class="p-4 ">
+            <div class="p-4">
               <img
                 src="@/assets/images/dbc/logo-white.PNG"
                 alt=""
@@ -20,7 +20,7 @@
                 Bangladesh
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4 inline-block"
+                  class="inline-block w-4 h-4"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -39,7 +39,7 @@
             <div class="p-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

@@ -1,18 +1,17 @@
 <template>
-  <fragment>
-    <Header />
-    <Nuxt />
-    <!-- <Footer /> -->
-  </fragment>
+  <div>
+    <DesktopView v-if="$device.isDesktop"></DesktopView>
+    <MobileView v-else></MobileView>
+  </div>
 </template>
 <script>
-import Header from "@/layouts/partials/header/Header";
-import Footer from "@/layouts/partials/footer/Footer";
+import MobileView from "@/layouts/view/MobileView";
+import DesktopView from "@/layouts/view/DesktopView";
 
 export default {
   components: {
-    Header,
-    Footer,
+    MobileView,
+    DesktopView,
   },
 };
 </script>

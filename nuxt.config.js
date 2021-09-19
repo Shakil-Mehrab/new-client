@@ -1,4 +1,7 @@
 export default {
+    server: {
+        port: 3333
+    },
     head: {
 
         title: 'news-client',
@@ -23,7 +26,9 @@ export default {
     },
 
     css: [
-        '@/assets/css/style.css'
+        '@/assets/css/style.css',
+        '@/assets/fonts/kiron/kiron.css'
+
     ],
 
     plugins: [
@@ -33,7 +38,8 @@ export default {
     components: true,
 
     buildModules: [
-        ['@nuxtjs/tailwindcss']
+        ['@nuxtjs/tailwindcss'],
+        '@nuxtjs/device',
     ],
 
     modules: [
