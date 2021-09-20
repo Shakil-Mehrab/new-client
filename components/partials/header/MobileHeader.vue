@@ -5,11 +5,11 @@
       role="dialog"
       aria-modal="true"
     >
-      <div
+      <!-- <div
         class="fixed inset-0 bg-gray-600 bg-opacity-75"
         aria-hidden="true"
         v-show="menu"
-      ></div>
+      ></div> -->
 
       <div
         class="relative flex flex-col flex-1 w-full max-w-xs pt-5 pb-4 bg-white"
@@ -97,7 +97,6 @@
               href="#"
               class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
-              <!-- Heroicon name: outline/folder -->
               <svg
                 class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +119,6 @@
               href="#"
               class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
-              <!-- Heroicon name: outline/calendar -->
               <svg
                 class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +141,6 @@
               href="#"
               class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
-              <!-- Heroicon name: outline/inbox -->
               <svg
                 class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +163,6 @@
               href="#"
               class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
-              <!-- Heroicon name: outline/chart-bar -->
               <svg
                 class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +221,6 @@
                 <div
                   class="absolute inset-y-0 left-0 flex items-center pointer-events-none "
                 >
-                  <!-- Heroicon name: solid/search -->
                   <svg
                     class="w-5 h-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +251,6 @@
               class="p-1 text-gray-400 bg-white rounded-full  hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               <span class="sr-only">View notifications</span>
-              <!-- Heroicon name: outline/bell -->
               <svg
                 class="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -296,7 +290,7 @@
         </div>
       </div>
 
-      <main class="relative flex-1 overflow-y-auto focus:outline-none">
+      <!-- <main class="relative flex-1 overflow-y-auto focus:outline-none">
         <div class="py-6">
           <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
             <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
@@ -311,7 +305,7 @@
             </div>
           </div>
         </div>
-      </main>
+      </main> -->
     </div>
   </div>
 </template>

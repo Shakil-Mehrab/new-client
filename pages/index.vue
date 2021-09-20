@@ -1,16 +1,16 @@
 <template>
   <main>
     <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
-              <!-- <div
-                class="order-2 col-span-12 sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              <div
+                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
                 <ArticleListWithImage :news="4" :detail="true" />
-              </div> -->
+              </div>
               <div
                 class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
               >
@@ -79,9 +79,9 @@
     <!-- <AdvertiseItem /> -->
     <!-- English -->
     <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="w-full">
-          <div class="my-3 sm:my-6">
+          <div class="sm:my-6">
             <Devider title="English" />
           </div>
           <div class="w-full">
@@ -94,7 +94,7 @@
     </div> -->
     <!-- Banglasesh -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -112,11 +112,11 @@
     </div>
     <!-- International -->
     <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="আন্তর্জাতিক" />
             </div>
             <div class="grid grid-cols-12 gap-1 md:gap-6">
@@ -148,11 +148,11 @@
     </div>
     <!-- International -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="International" />
             </div>
             <div class="w-full">
@@ -166,11 +166,11 @@
     </div>
     <!-- Sports -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Sports" />
             </div>
             <div class="w-full">
@@ -186,8 +186,8 @@
     <AdvertiseItem class="md:hidden" />
     <!-- Special News Event  -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
-        <div class="my-3 sm:my-6">
+      <div class="px-4 sm:px-0">
+        <div class="sm:my-6">
           <Devider title="Special News Event" />
         </div>
         <div class="xl:space-x-6 xl:flex">
@@ -205,11 +205,11 @@
     </div>
     <!-- Opinion -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Opinion" />
             </div>
             <div class="w-full">
@@ -223,11 +223,11 @@
     </div>
     <!-- Ceremony -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Ceremony" />
             </div>
             <div class="w-full">
@@ -241,11 +241,11 @@
     </div>
     <!-- Job -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Job" />
             </div>
             <div class="w-full">
@@ -291,11 +291,11 @@
     </section>
     <!-- Occation -->
     <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-4 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="অনুষ্ঠান সমারোহ" />
             </div>
             <div class="grid grid-cols-12 gap-1 md:gap-6">
@@ -309,14 +309,14 @@
           </div>
           <!-- col 4  -->
           <div class="relative w-full xl:w-4/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="International" />
             </div>
             <div class="my-6">
               <ContactUs />
             </div>
             <div class="w-full my-2">
-              <div class="my-3 sm:my-6">
+              <div class="sm:my-6">
                 <Devider title="Trending Poll" />
               </div>
               <div class="w-full">
@@ -406,7 +406,7 @@
     <!-- Special news  -->
     <section class="my-8 spcial-news">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="my-3 sm:my-6">
+        <div class="sm:my-6">
           <Devider title="স্পেশ্যাল রিপোর্ট" />
         </div>
         <SpecialReport />
@@ -546,7 +546,7 @@
       <div class="container px-4 mx-auto lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full my-2 md:w-8/12 md:pr-4">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="রাজনীতিক" />
             </div>
             <ul
@@ -614,7 +614,7 @@
             </ul>
           </div>
           <div class="w-full my-2 md:w-4/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="ট্রেন্ডিং নিউজ" />
             </div>
             <div class="w-full rounded-md shadow-md">
@@ -702,7 +702,7 @@
     <!-- Dbc special  responsive-->
     <section class="my-8 special">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <div class="my-3 sm:my-6">
+        <div class="sm:my-6">
           <Devider title="Special News" />
         </div>
         <ul
@@ -757,7 +757,7 @@
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full md:w-4/12" v-for="n in 2" :key="n">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Lifestyle" />
             </div>
             <div class="md:pr-4">
@@ -765,7 +765,7 @@
             </div>
           </div>
           <div class="relative w-full md:w-4/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="Entertainment" />
             </div>
             <ul
@@ -799,7 +799,7 @@
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-center w-full">
           <div class="w-full my-2 md:w-8/12">
-            <div class="my-3 sm:my-6">
+            <div class="sm:my-6">
               <Devider title="অভিমতি" />
             </div>
             <div class="flex flex-wrap w-full">
