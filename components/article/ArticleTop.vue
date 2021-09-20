@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-full mb-2 rounded-md shadow-md sm:mb-6 sm:shadow-none">
+  <div class="relative h-full rounded-md shadow-md sm:mb-6 sm:shadow-none">
     <a href="">
       <div class="">
         <img
@@ -31,7 +31,7 @@
               Covid
             </div>
           </div>
-          <div class="mt-4 sm:my-8">
+          <div class="mt-2 sm:my-8">
             <div class="order-2 title-large sm:order-1">
               নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ t
             </div>

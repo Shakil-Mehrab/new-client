@@ -1,5 +1,4 @@
-
-  <template>
+<template>
   <div class="w-full xl:mt-0">
     <div class="py-3 border-b-2 first:pt-0" v-for="n in 5" :key="n">
       <a href="">

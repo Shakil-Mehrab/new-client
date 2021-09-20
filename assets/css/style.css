@@ -8,3 +8,8 @@
 body {
     font-family: Kiron, Arial, sans-serif !important;
 }
+
+.hide-left {
+    margin-left: -20rem;
+    visibility: hidden;
+}

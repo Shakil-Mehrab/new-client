@@ -2,6 +2,12 @@ export default {
     server: {
         port: 3333
     },
+
+    ngrok: {
+        authtoken: '1yPP89r0xEmoGOu2shTLrjeIbJR_7MYGRdReVNKjzxbD7Rdb5',
+        region: 'ap'
+    },
+
     head: {
 
         title: 'news-client',
@@ -40,6 +46,7 @@ export default {
     buildModules: [
         ['@nuxtjs/tailwindcss'],
         '@nuxtjs/device',
+        '@nuxtjs/ngrok',
     ],
 
     modules: [

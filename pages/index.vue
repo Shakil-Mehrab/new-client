@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
@@ -79,7 +79,7 @@
     <!-- <AdvertiseItem /> -->
     <!-- English -->
     <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="w-full">
           <div class="sm:my-6">
             <Devider title="English" />
@@ -94,10 +94,10 @@
     </div> -->
     <!-- Banglasesh -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
-          <div class="w-full">
+          <div class="w-full mt-1">
             <div class="sm:my-6">
               <Devider title="Banglasesh" />
             </div>
@@ -112,7 +112,7 @@
     </div>
     <!-- International -->
     <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">
@@ -148,7 +148,7 @@
     </div>
     <!-- International -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -166,7 +166,7 @@
     </div>
     <!-- Sports -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -185,8 +185,8 @@
     <!-- banner  -->
     <AdvertiseItem class="md:hidden" />
     <!-- Special News Event  -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
+      <div class="px-2 sm:px-0">
         <div class="sm:my-6">
           <Devider title="Special News Event" />
         </div>
@@ -205,7 +205,7 @@
     </div>
     <!-- Opinion -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -223,7 +223,7 @@
     </div>
     <!-- Ceremony -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -241,7 +241,7 @@
     </div>
     <!-- Job -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full">
@@ -291,7 +291,7 @@
     </section>
     <!-- Occation -->
     <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-4 sm:px-0">
+      <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-8/12">

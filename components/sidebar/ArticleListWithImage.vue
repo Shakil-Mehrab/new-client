@@ -7,7 +7,7 @@
     >
       <a href="">
         <div
-          class="grid grid-cols-12 gap-2 rounded-md shadow-md 2md:shadow-none"
+          class="grid grid-cols-12 gap-1 rounded-md shadow-md 2md:shadow-none"
         >
           <div class="col-span-12 2md:col-span-4">
             <img
@@ -17,7 +17,7 @@
             />
           </div>
           <div class="col-span-12 p-2 2md:col-span-8 2md:p-0">
-            <div class="date 2md:hidden">
+            <div class="mb-1 date 2md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="inline w-4 h-4 mr-1"
