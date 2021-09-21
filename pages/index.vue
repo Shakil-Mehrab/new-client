@@ -96,7 +96,6 @@
         </div>
       </div>
     </div>
-
     <!-- International -->
     <!-- <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
       <div class="px-2 sm:px-0">
@@ -150,7 +149,6 @@
       </div>
     </div>
     <AdvertiseItem class="md:hidden" />
-
     <!-- 4 grid  -->
     <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
@@ -345,9 +343,9 @@
         </div>
       </div>
     </section> -->
-    <!-- Occation -->
+    <!-- Trending poll -->
     <div class="container mx-auto sm:px-6 lg:px-8">
-      <div class="px-2 sm:px-0">
+      <div class="sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- <div class="w-full xl:w-8/12">
             <div class="sm:my-6">
@@ -363,14 +361,14 @@
             </div>
           </div> -->
           <div class="relative w-full xl:w-4/12">
-            <div class="sm:my-6">
+            <div class="px-2 sm:my-6">
               <Devider title="International" />
             </div>
-            <div class="">
+            <div class="px-2">
               <ContactUs />
             </div>
             <div class="w-full my-2">
-              <div class="sm:my-6">
+              <div class="px-2 sm:my-6">
                 <Devider title="Trending Poll" />
               </div>
               <div class="w-full">
@@ -381,7 +379,54 @@
         </div>
       </div>
     </div>
-
+    <AdvertiseItem class="md:hidden" />
+    <!-- video  -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-2 sm:px-0">
+        <div class="sm:my-6">
+          <Devider title="Video" />
+        </div>
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full xl:w-10/12">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              >
+                <VideoArticle :news="4" :detail="true" />
+              </div>
+              <!-- <div
+                class="order-1 col-span-12 rounded-md 2md:col-span-7 2md:order-1"
+              >
+                <ArticleTop />
+              </div> -->
+            </div>
+          </div>
+          <!-- col 4  -->
+          <!-- <div class="order-3 w-full xl:w-2/12">
+            <HeadingList :news="5" />
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- sidebar Video  -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="sm:my-6">
+              <Devider title="Ceremony" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <SidebarVideo :news="5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- video  -->
     <section class="my-6 bg-gray-900 video">
       <div class="container px-4 py-8 mx-auto sm:px-6 lg:px-8">
@@ -495,7 +540,6 @@
       </div>
     </div>
     <!-- four div  -->
-
     <section class="my-8 four-div">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <ul
@@ -1046,6 +1090,8 @@ import SpecialReport from "@/components/specialReport/SpecialReport";
 import ArtilceSection from "@/components/section/ArtilceSection";
 import ArtilceSlider from "@/components/slider/ArtilceSlider";
 import ArticleSliderTwo from "@/components/slider/ArticleSliderTwo";
+import VideoArticle from "@/components/video/VideoArticle";
+import SidebarVideo from "@/components/video/SidebarVideo";
 
 export default {
   components: {
@@ -1064,6 +1110,8 @@ export default {
     ArtilceSection,
     ArtilceSlider,
     ArticleSliderTwo,
+    VideoArticle,
+    SidebarVideo,
   },
 };
 </script>
