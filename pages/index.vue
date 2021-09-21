@@ -6,11 +6,11 @@
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
-              <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              <!-- <div
+                class="order-2 col-span-12 sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
                 <ArticleListWithImage :news="4" :detail="true" />
-              </div>
+              </div> -->
               <div
                 class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
               >
@@ -25,7 +25,6 @@
         </div>
       </div>
     </div>
-    <AdvertiseItem class="md:hidden" />
 
     <!-- banner  -->
     <!-- covid section  -->
@@ -79,21 +78,6 @@
       </div>
     </section> -->
     <!-- <AdvertiseItem /> -->
-    <!-- English -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-2 sm:px-0">
-        <div class="w-full">
-          <div class="sm:my-6">
-            <Devider title="English" />
-          </div>
-          <div class="w-full">
-            <div class="px-1">
-              <EnglishArtilce :news="5" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Banglasesh -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -112,6 +96,7 @@
         </div>
       </div>
     </div>
+
     <!-- International -->
     <!-- <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
       <div class="px-2 sm:px-0">
@@ -164,6 +149,34 @@
         </div>
       </div>
     </div>
+    <AdvertiseItem class="md:hidden" />
+
+    <!-- 4 grid  -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full xl:w-10/12">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              >
+                <ArticleListWithImage :news="4" :detail="true" />
+              </div>
+              <!-- <div
+                class="order-1 col-span-12 rounded-md 2md:col-span-7 2md:order-1"
+              >
+                <ArticleTop />
+              </div> -->
+            </div>
+          </div>
+          <!-- col 4  -->
+          <!-- <div class="order-3 w-full xl:w-2/12">
+            <HeadingList :news="5" />
+          </div> -->
+        </div>
+      </div>
+    </div>
     <!-- Sports -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -182,10 +195,25 @@
         </div>
       </div>
     </div>
+    <!-- English -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-2 sm:px-0">
+        <div class="w-full">
+          <div class="sm:my-6">
+            <Devider title="English" />
+          </div>
+          <div class="w-full">
+            <div class="px-1">
+              <EnglishArtilce :news="5" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- banner  -->
     <AdvertiseItem class="md:hidden" />
     <!-- Special News Event  -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
           <Devider title="Special Neww" />
@@ -231,25 +259,6 @@
         </div>
       </div>
     </div>
-    <!-- News Block -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="sm:px-0">
-        <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
-          <div class="w-full">
-            <div class="px-2 sm:my-6">
-              <Devider title="News Block" />
-            </div>
-            <div class="w-full">
-              <div class="">
-                <ArtilceSlider :news="3" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Ceremony -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -262,6 +271,24 @@
             <div class="w-full">
               <div class="">
                 <ArtilceSection :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News Block -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="px-2 sm:my-6">
+              <Devider title="News Block" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSlider :news="3" />
               </div>
             </div>
           </div>

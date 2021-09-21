@@ -1,10 +1,13 @@
 <template>
   <div class="">
     <carousel
-      :perPageCustom="[[350, 1.25]]"
+      :perPageCustom="[[350, 1.125]]"
       :loop="true"
       :autoplay="false"
-      :paginationEnabled="false"
+      :paginationEnabled="true"
+      :paginationPadding="4"
+      :paginationSize="4"
+      :navigationClickTargetSize="20"
       class="relative product-slider"
     >
       <slide v-for="n in 4" :key="n" class="px-1">
@@ -32,5 +35,13 @@ export default {
   },
 };
 </script>
-
+<style>
+.VueCarousel-navigation-next[data-v-453ad8cd] {
+  left: 290px !important;
+  border: 1px solid gray;
+  background: gray;
+  opacity: 80%;
+  /* :navigationEnabled="true" */
+}
+</style>
 
