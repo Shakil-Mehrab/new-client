@@ -4,8 +4,8 @@
       <div class="">
         <img src="@/assets/images/dbc/cow.png" alt="" class="w-full" />
       </div>
-      <div class="p-4">
-        <ColorlessKicker />
+      <div class="px-4">
+        <ColorlessKicker class="mb-1" />
         <h4 class="my-3 title">নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ</h4>
         <Date />
       </div>

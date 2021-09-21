@@ -346,10 +346,10 @@
       </div>
     </section> -->
     <!-- Occation -->
-    <!-- <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
-          <div class="w-full xl:w-8/12">
+          <!-- <div class="w-full xl:w-8/12">
             <div class="sm:my-6">
               <Devider title="অনুষ্ঠান সমারোহ" />
             </div>
@@ -361,12 +361,12 @@
                 <HeadingList :date="true" />
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="relative w-full xl:w-4/12">
             <div class="sm:my-6">
               <Devider title="International" />
             </div>
-            <div class="my-6">
+            <div class="">
               <ContactUs />
             </div>
             <div class="w-full my-2">
@@ -374,13 +374,13 @@
                 <Devider title="Trending Poll" />
               </div>
               <div class="w-full">
-                <TrendingPoll />
+                <ArticleSliderThree />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- video  -->
     <section class="my-6 bg-gray-900 video">
@@ -1035,7 +1035,7 @@ import ArticleTop from "@/components/article/ArticleTop";
 import ArticleTopLeft from "@/components/article/ArticleTopLeft";
 import ArticleListWithImage from "@/components/sidebar/ArticleListWithImage";
 import ArticleRightList from "@/components/sidebar/ArticleRightList";
-import TrendingPoll from "@/components/sidebar/TrendingPoll";
+import ArticleSliderThree from "@/components/slider/ArticleSliderThree";
 import MostPopular from "@/components/sidebar/MostPopular";
 import ContactUs from "@/components/sidebar/ContactUs";
 import AdvertiseItem from "@/components/Advertisement/AdvertiseItem";
@@ -1057,7 +1057,7 @@ export default {
     HeadingList,
     MostPopular,
     ContactUs,
-    TrendingPoll,
+    ArticleSliderThree,
     Devider,
     EnglishArtilce,
     SpecialReport,
