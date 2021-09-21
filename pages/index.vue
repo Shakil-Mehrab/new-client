@@ -25,6 +25,8 @@
         </div>
       </div>
     </div>
+    <AdvertiseItem class="md:hidden" />
+
     <!-- banner  -->
     <!-- covid section  -->
     <!-- <section class="mt-16 slide-section">
@@ -78,20 +80,20 @@
     </section> -->
     <!-- <AdvertiseItem /> -->
     <!-- English -->
-    <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="w-full">
           <div class="sm:my-6">
             <Devider title="English" />
           </div>
           <div class="w-full">
-            <div class="">
+            <div class="px-1">
               <EnglishArtilce :news="5" />
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Banglasesh -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -111,10 +113,9 @@
       </div>
     </div>
     <!-- International -->
-    <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
+    <!-- <div class="container hidden mx-auto sm:px-6 lg:px-8 md:block">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
           <div class="w-full xl:w-8/12">
             <div class="sm:my-6">
               <Devider title="আন্তর্জাতিক" />
@@ -128,12 +129,11 @@
               </div>
             </div>
           </div>
-          <!-- col 4  -->
           <div class="relative w-full mt-16 xl:w-4/12">
             <div class="p-4 border-4 border-gray-700 rounded-xl">
               <div class="flex justify-center">
                 <div
-                  class="absolute p-4 m-4 bg-gray-100 border  absolute-part -top-12"
+                  class="absolute p-4 m-4 bg-gray-100 border absolute-part -top-12"
                 >
                   <h4 class="text-4xl text-gray-700">জেলার খবর</h4>
                 </div>
@@ -145,7 +145,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- International -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -185,14 +185,20 @@
     <!-- banner  -->
     <AdvertiseItem class="md:hidden" />
     <!-- Special News Event  -->
-    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
-          <Devider title="Special News Event" />
+          <Devider title="Special Neww" />
         </div>
         <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              >
+                <ArticleSliderTwo />
+              </div>
               <div
                 class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
               >
@@ -200,6 +206,10 @@
               </div>
             </div>
           </div>
+          <!-- col 4  -->
+          <!-- <div class="order-3 w-full xl:w-2/12">
+            <HeadingList :news="5" />
+          </div> -->
         </div>
       </div>
     </div>
@@ -221,6 +231,25 @@
         </div>
       </div>
     </div>
+    <!-- News Block -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="px-2 sm:my-6">
+              <Devider title="News Block" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArtilceSlider :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Ceremony -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
@@ -258,7 +287,7 @@
       </div>
     </div>
     <!-- subscribe  -->
-    <section class="my-6 subscribe">
+    <!-- <section class="my-6 subscribe">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="overflow-hidden bg-red-600 subscribe-bg-img rounded-xl">
           <div class="flex flex-wrap items-center w-full px-12 py-12">
@@ -275,7 +304,7 @@
               <div class="items-center w-full sm:flex">
                 <input
                   type="text"
-                  class="w-full h-12 px-4 my-2 text-white bg-red-500 rounded-md  sm:mx-2 focus:border-none focus:outline-none"
+                  class="w-full h-12 px-4 my-2 text-white bg-red-500 rounded-md sm:mx-2 focus:border-none focus:outline-none"
                   placeholder="Enter Your Email"
                 />
                 <button
@@ -288,12 +317,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Occation -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
           <div class="w-full xl:w-8/12">
             <div class="sm:my-6">
               <Devider title="অনুষ্ঠান সমারোহ" />
@@ -307,7 +335,6 @@
               </div>
             </div>
           </div>
-          <!-- col 4  -->
           <div class="relative w-full xl:w-4/12">
             <div class="sm:my-6">
               <Devider title="International" />
@@ -326,7 +353,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- video  -->
     <section class="my-6 bg-gray-900 video">
@@ -412,6 +439,34 @@
         <SpecialReport />
       </div>
     </section>
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-2 sm:px-0">
+        <div class="sm:my-6">
+          <Devider title="স্পেশ্যাল রিপোর্ট" />
+        </div>
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full xl:w-10/12">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+              >
+                <ArticleListWithImage :news="4" :detail="true" />
+              </div>
+              <div
+                class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
+              >
+                <ArticleTop />
+              </div>
+            </div>
+          </div>
+          <!-- col 4  -->
+          <!-- <div class="order-3 w-full xl:w-2/12">
+            <HeadingList :news="5" />
+          </div> -->
+        </div>
+      </div>
+    </div>
     <!-- four div  -->
 
     <section class="my-8 four-div">
@@ -962,6 +1017,8 @@ import Devider from "@/components/devider/Devider";
 import EnglishArtilce from "@/components/english/EnglishArtilce";
 import SpecialReport from "@/components/specialReport/SpecialReport";
 import ArtilceSection from "@/components/section/ArtilceSection";
+import ArtilceSlider from "@/components/slider/ArtilceSlider";
+import ArticleSliderTwo from "@/components/slider/ArticleSliderTwo";
 
 export default {
   components: {
@@ -978,6 +1035,8 @@ export default {
     EnglishArtilce,
     SpecialReport,
     ArtilceSection,
+    ArtilceSlider,
+    ArticleSliderTwo,
   },
 };
 </script>

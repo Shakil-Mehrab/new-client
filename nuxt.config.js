@@ -39,6 +39,7 @@ export default {
 
     plugins: [
         "@/plugins/VueFragment",
+        { src: "~/plugins/VueCarousel.js", mode: "client" },
     ],
 
     components: true,
