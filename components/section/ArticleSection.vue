@@ -3,7 +3,7 @@
   <div class="w-full xl:mt-0">
     <a
       href=""
-      class="block p-2 mt-1 mb-2 border border-b-0 rounded-md shadow-md"
+      class="block p-2 mt-1 mb-2 border border-b-0 rounded-md shadow"
       v-for="n in news"
       :key="n"
     >

@@ -3,7 +3,7 @@
   <div class="w-full xl:mt-0">
     <a
       href=""
-      class="block p-2 mt-1 mb-2 border border-b-0 rounded-md shadow-md"
+      class="block p-2 mt-1 mb-2 border border-b-0 rounded-md shadow"
       v-for="n in news"
       :key="n"
     >
@@ -14,29 +14,21 @@
             alt=""
             class="w-full h-full rounded-md"
           />
-          <div
-            class="absolute bottom-0 p-1 text-red-700 bg-gray-900 rounded-tr-md"
-          >
+          <PLayButton />
+          <div class="absolute text-red-700 bottom-1 left-1 rounded-tr-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+              class="bg-white rounded-full w-7 h-7"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                clip-rule="evenodd"
               />
             </svg>
+            <!-- <p class="text-xs">2:34</p> -->
           </div>
         </div>
         <div class="w-8/12">
@@ -52,6 +44,7 @@
 <script>
 import Date from "@/components/date/Date";
 import Time from "@/components/date/Time";
+import PlayButton from "@/components/video/PlayButton";
 
 export default {
   props: {
@@ -69,6 +62,7 @@ export default {
   components: {
     Date,
     Time,
+    PlayButton,
   },
 };
 </script>

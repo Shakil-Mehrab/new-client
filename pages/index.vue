@@ -1,5 +1,7 @@
 <template>
   <main>
+    <AdvertiseItem class="md:hidden" />
+
     <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
@@ -25,7 +27,6 @@
         </div>
       </div>
     </div>
-
     <!-- banner  -->
     <!-- covid section  -->
     <!-- <section class="mt-16 slide-section">
@@ -85,11 +86,11 @@
           <!-- col 8 -->
           <div class="w-full mt-1">
             <div class="sm:my-6">
-              <Devider title="Banglasesh" />
+              <Devider title="বাংলাদেশ" />
             </div>
             <div class="w-full">
               <div class="">
-                <ArtilceSection :news="3" />
+                <ArticleSection :news="3" />
               </div>
             </div>
           </div>
@@ -137,11 +138,11 @@
           <!-- col 8 -->
           <div class="w-full">
             <div class="sm:my-6">
-              <Devider title="International" />
+              <Devider title="আন্তর্জাতিক" />
             </div>
             <div class="w-full">
               <div class="">
-                <ArtilceSection :news="5" />
+                <ArticleSection :news="5" />
               </div>
             </div>
           </div>
@@ -155,6 +156,9 @@
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full xl:w-10/12">
+            <div class="sm:my-6">
+              <Devider title="বিনোদন" />
+            </div>
             <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
                 class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
@@ -182,11 +186,11 @@
           <!-- col 8 -->
           <div class="w-full">
             <div class="sm:my-6">
-              <Devider title="Sports" />
+              <Devider title="খেলাধুলা" />
             </div>
             <div class="w-full">
               <div class="">
-                <ArtilceSection :news="5" />
+                <ArticleSection :news="5" />
               </div>
             </div>
           </div>
@@ -196,16 +200,7 @@
     <!-- English -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
-        <div class="w-full">
-          <div class="sm:my-6">
-            <Devider title="English" />
-          </div>
-          <div class="w-full">
-            <div class="px-1">
-              <EnglishArtilce :news="5" />
-            </div>
-          </div>
-        </div>
+        <EnglishArtilce :news="5" />
       </div>
     </div>
     <!-- banner  -->
@@ -214,7 +209,7 @@
     <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
-          <Devider title="Special Neww" />
+          <Devider title="বিশেষ খবর" />
         </div>
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -246,11 +241,11 @@
           <!-- col 8 -->
           <div class="w-full">
             <div class="sm:my-6">
-              <Devider title="Opinion" />
+              <Devider title="মতামত" />
             </div>
             <div class="w-full">
               <div class="">
-                <ArtilceSection :news="3" />
+                <ArticleSection :news="3" />
               </div>
             </div>
           </div>
@@ -258,23 +253,23 @@
       </div>
     </div>
     <!-- Ceremony -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
+
           <div class="w-full">
             <div class="sm:my-6">
-              <Devider title="Ceremony" />
+              <Devider title="অনুষ্ঠান" />
             </div>
             <div class="w-full">
               <div class="">
-                <ArtilceSection :news="3" />
+                <ArticleSection :news="3" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- News Block -->
     <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
       <div class="sm:px-0">
@@ -282,7 +277,7 @@
           <!-- col 8 -->
           <div class="w-full">
             <div class="px-2 sm:my-6">
-              <Devider title="News Block" />
+              <Devider title="নিউজ ব্লক" />
             </div>
             <div class="w-full">
               <div class="">
@@ -293,24 +288,7 @@
         </div>
       </div>
     </div>
-    <!-- Job -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
-      <div class="px-2 sm:px-0">
-        <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
-          <div class="w-full">
-            <div class="sm:my-6">
-              <Devider title="Job" />
-            </div>
-            <div class="w-full">
-              <div class="">
-                <ArtilceSection :news="5" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- subscribe  -->
     <!-- <section class="my-6 subscribe">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
@@ -344,10 +322,10 @@
       </div>
     </section> -->
     <!-- Trending poll -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="sm:px-0">
         <div class="xl:space-x-6 xl:flex">
-          <!-- <div class="w-full xl:w-8/12">
+          <div class="w-full xl:w-8/12">
             <div class="sm:my-6">
               <Devider title="অনুষ্ঠান সমারোহ" />
             </div>
@@ -359,17 +337,17 @@
                 <HeadingList :date="true" />
               </div>
             </div>
-          </div> -->
+          </div>
           <div class="relative w-full xl:w-4/12">
             <div class="px-2 sm:my-6">
-              <Devider title="International" />
+              <Devider title="সামাজিক মাধ্যম" />
             </div>
             <div class="px-2">
               <ContactUs />
             </div>
             <div class="w-full my-2">
               <div class="px-2 sm:my-6">
-                <Devider title="Trending Poll" />
+                <Devider title="ট্রেন্ডিং পোল" />
               </div>
               <div class="w-full">
                 <ArticleSliderThree />
@@ -378,13 +356,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <AdvertiseItem class="md:hidden" />
     <!-- video  -->
     <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
-          <Devider title="Video" />
+          <Devider title="বিশেষ প্রতিবেদনের খবর" />
         </div>
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -416,7 +394,7 @@
           <!-- col 8 -->
           <div class="w-full">
             <div class="sm:my-6">
-              <Devider title="Ceremony" />
+              <Devider title="অনুষ্ঠান" />
             </div>
             <div class="w-full">
               <div class="">
@@ -428,7 +406,7 @@
       </div>
     </div>
     <!-- video  -->
-    <section class="my-6 bg-gray-900 video">
+    <!-- <section class="my-6 bg-gray-900 video">
       <div class="container px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div class="w-full">
           <div class="flex items-baseline w-full my-4 categroy-heading">
@@ -482,7 +460,7 @@
           </div>
         </div>
         <div
-          class="relative grid grid-cols-1 border-b-2  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+          class="relative grid grid-cols-1 border-b-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 md:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
         >
           <div class="w-full my-2" v-for="n in 4" :key="n">
             <div class="overflow-hidden rounded-md vidow-section">
@@ -499,56 +477,124 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- advertisement  -->
     <AdvertiseItem />
-    <!-- Special news  -->
-    <section class="my-8 spcial-news">
+    <!-- News Video  -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="px-2 sm:my-6">
+              <Devider title="সংবাদ ভিডিও" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <NewsVideo :news="3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <AdvertiseItem class="md:hidden" />
+    <!-- Dbc Special news  -->
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <div class="w-full">
+            <div class="px-2 sm:my-6">
+              <Devider title="ডিবিসি বিশেষ খবর" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <NewsVideo :news="3" :date="true" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Images  -->
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <div class="w-full">
+            <div class="px-2 sm:my-6">
+              <Devider title="Images" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <Images :news="8" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Job -->
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <div class="w-full">
+            <div class="sm:my-6">
+              <Devider title="Job" />
+            </div>
+            <div class="w-full">
+              <div class="">
+                <ArticleSection :news="5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <section class="my-8 spcial-news">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="sm:my-6">
           <Devider title="স্পেশ্যাল রিপোর্ট" />
         </div>
         <SpecialReport />
       </div>
-    </section>
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    </section> -->
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
           <Devider title="স্পেশ্যাল রিপোর্ট" />
         </div>
         <div class="xl:space-x-6 xl:flex">
-          <!-- col 8 -->
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+                class="order-2 col-span-12 sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
               >
                 <ArticleListWithImage :news="4" :detail="true" />
               </div>
               <div
-                class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
+                class="order-1 col-span-12 rounded-md 2md:col-span-7 2md:order-1"
               >
                 <ArticleTop />
               </div>
             </div>
           </div>
-          <!-- col 4  -->
-          <!-- <div class="order-3 w-full xl:w-2/12">
+          <div class="order-3 w-full xl:w-2/12">
             <HeadingList :news="5" />
-          </div> -->
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- four div  -->
-    <section class="my-8 four-div">
+    <!-- <section class="my-8 four-div">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <ul
           role="list"
-          class="grid grid-cols-2  gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+          class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
         >
           <li class="relative" v-for="n in 4" :key="n">
             <div
-              class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+              class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
             >
               <img
                 src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
@@ -561,7 +607,7 @@
             </div>
             <div class="flex">
               <p
-                class="absolute top-0 flex px-4 py-1 text-sm text-white uppercase bg-red-600 rounded-sm  left-4"
+                class="absolute top-0 flex px-4 py-1 text-sm text-white uppercase bg-red-600 rounded-sm left-4"
               >
                 Covid
               </p>
@@ -598,12 +644,12 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- photo gallery  respnsive-->
-    <section class="my-8 photo-gallery">
+    <!-- <section class="my-8 photo-gallery">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div
-          class="relative w-full px-2 py-16 mx-auto text-center border-t-2 border-l-2 border-r-2 border-red-600  top-pary sm:w-8/12 rounded-t-md"
+          class="relative w-full px-2 py-16 mx-auto text-center border-t-2 border-l-2 border-r-2 border-red-600 top-pary sm:w-8/12 rounded-t-md"
         >
           <div class="flex justify-center">
             <p
@@ -623,11 +669,11 @@
 
         <ul
           role="list"
-          class="grid grid-cols-2  gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+          class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
         >
           <li class="relative border-r" v-for="n in 8" :key="n">
             <div
-              class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+              class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
             >
               <img
                 src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
@@ -666,9 +712,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- Plotics  responsive-->
-    <section class="my-8 politics">
+    <!-- <section class="my-8 politics">
       <div class="container px-4 mx-auto lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full my-2 md:w-8/12 md:pr-4">
@@ -677,20 +723,20 @@
             </div>
             <ul
               role="list"
-              class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
+              class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
             >
               <li
-                class="relative grid grid-cols-1 border-b-2  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
+                class="relative grid grid-cols-1 border-b-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
                 v-for="n in 4"
                 :key="n"
               >
                 <div
-                  class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+                  class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
                     alt=""
-                    class="object-cover pointer-events-none  group-hover:opacity-75"
+                    class="object-cover pointer-events-none group-hover:opacity-75"
                   />
                   <button
                     type="button"
@@ -759,20 +805,20 @@
               <div class="p-2">
                 <ul
                   role="list"
-                  class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
+                  class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:sm:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
                 >
                   <li
-                    class="relative grid grid-cols-1 border-b-2  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
+                    class="relative grid grid-cols-1 border-b-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
                     v-for="n in 4"
                     :key="n"
                   >
                     <div
-                      class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+                      class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
                     >
                       <img
                         src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
                         alt=""
-                        class="object-cover pointer-events-none  group-hover:opacity-75"
+                        class="object-cover pointer-events-none group-hover:opacity-75"
                       />
                       <button
                         type="button"
@@ -785,7 +831,7 @@
                     </div>
                     <div>
                       <p
-                        class="block mt-2 text-base font-medium text-gray-700 truncate pointer-events-none  md:mt-0"
+                        class="block mt-2 text-base font-medium text-gray-700 truncate pointer-events-none md:mt-0"
                       >
                         নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
                       </p>
@@ -798,16 +844,16 @@
             <div class="my-4 text-right">
               <ul
                 role="list"
-                class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-1 xl:gap-x-8"
+                class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-1 xl:gap-x-8"
               >
                 <li class="relative">
                   <div
-                    class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+                    class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
                   >
                     <img
                       src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
                       alt=""
-                      class="object-cover pointer-events-none  group-hover:opacity-75"
+                      class="object-cover pointer-events-none group-hover:opacity-75"
                     />
                     <button
                       type="button"
@@ -824,20 +870,20 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Dbc special  responsive-->
-    <section class="my-8 special">
+    <!-- <section class="my-8 special">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="sm:my-6">
           <Devider title="Special News" />
         </div>
         <ul
           role="list"
-          class="grid grid-cols-2  gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+          class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
         >
           <li class="relative" v-for="n in 4" :key="n">
             <div
-              class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+              class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
             >
               <img
                 src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
@@ -877,9 +923,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!--Life style -->
-    <section class="my-8 International">
+    <!-- <section class="my-8 International">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex flex-wrap w-full">
           <div class="w-full md:w-4/12" v-for="n in 2" :key="n">
@@ -896,16 +942,16 @@
             </div>
             <ul
               role="list"
-              class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-1 xl:gap-x-8"
+              class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-1 xl:gap-x-8"
             >
               <li class="relative">
                 <div
-                  class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+                  class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
                 >
                   <img
                     src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
                     alt=""
-                    class="object-cover pointer-events-none  group-hover:opacity-75"
+                    class="object-cover pointer-events-none group-hover:opacity-75"
                   />
                   <button
                     type="button"
@@ -919,9 +965,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Opinion  responsive-->
-    <section class="my-8 opinion">
+    <!-- <section class="my-8 opinion">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <div class="flex justify-center w-full">
           <div class="w-full my-2 md:w-8/12">
@@ -933,7 +979,7 @@
                 <div class="relative flex items-end h-full border rounded-md">
                   <div class="px-4 my-4 detail">
                     <h4
-                      class="absolute w-10/12 p-4 text-xl text-white bg-red-600  -left-16 top-4"
+                      class="absolute w-10/12 p-4 text-xl text-white bg-red-600 -left-16 top-4"
                     >
                       এমবিবিএস ২০২০-২১ শিক্ষাবর্ষের ভর্তি পরীক্ষায় প্রথম স্থান
                       অর্জন করেছেন পাবনার মেয়ে মিশরী মুনমুন। তিনি পাবনা
@@ -954,20 +1000,20 @@
               <div class="w-full my-2 md:w-6/12">
                 <ul
                   role="list"
-                  class="grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
+                  class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-1 lg:grid-cols-1 xl:gap-x-8"
                 >
                   <li
-                    class="relative grid grid-cols-1 border-b-2  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
+                    class="relative grid grid-cols-1 border-b-2 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
                     v-for="n in 4"
                     :key="n"
                   >
                     <div
-                      class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+                      class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
                     >
                       <img
                         src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
                         alt=""
-                        class="object-cover pointer-events-none  group-hover:opacity-75"
+                        class="object-cover pointer-events-none group-hover:opacity-75"
                       />
                       <button
                         type="button"
@@ -1010,28 +1056,27 @@
                     </div>
                   </li>
 
-                  <!-- More files... -->
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- last section responsive  -->
-    <section class="my-8 slide-section">
+    <!-- <section class="my-8 slide-section">
       <div class="container px-4 mx-auto sm:px-6 lg:px-8">
         <ul
           role="list"
-          class="grid grid-cols-2  gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
+          class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
         >
           <li
-            class="relative grid grid-cols-1  gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
+            class="relative grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-1 sm:gap-x-6 lg:grid-cols-2 xl:gap-x-8"
             v-for="n in 4"
             :key="n"
           >
             <div
-              class="block w-full overflow-hidden bg-gray-100 rounded-lg  group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
+              class="block w-full overflow-hidden bg-gray-100 rounded-lg group aspect-w-10 aspect-h-7 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500"
             >
               <img
                 src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
@@ -1044,7 +1089,7 @@
             </div>
             <div>
               <p
-                class="block mt-2 text-base font-medium text-gray-700 truncate pointer-events-none  sm:my-0"
+                class="block mt-2 text-base font-medium text-gray-700 truncate pointer-events-none sm:my-0"
               >
                 নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
               </p>
@@ -1070,7 +1115,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
 </template>
 
@@ -1082,16 +1127,18 @@ import ArticleRightList from "@/components/sidebar/ArticleRightList";
 import ArticleSliderThree from "@/components/slider/ArticleSliderThree";
 import MostPopular from "@/components/sidebar/MostPopular";
 import ContactUs from "@/components/sidebar/ContactUs";
-import AdvertiseItem from "@/components/Advertisement/AdvertiseItem";
+import AdvertiseItem from "@/components/advertisement/AdvertiseItem";
 import HeadingList from "@/components/sidebar/HeadingList";
 import Devider from "@/components/devider/Devider";
 import EnglishArtilce from "@/components/english/EnglishArtilce";
 import SpecialReport from "@/components/specialReport/SpecialReport";
-import ArtilceSection from "@/components/section/ArtilceSection";
+import ArticleSection from "@/components/section/ArticleSection";
 import ArtilceSlider from "@/components/slider/ArtilceSlider";
 import ArticleSliderTwo from "@/components/slider/ArticleSliderTwo";
 import VideoArticle from "@/components/video/VideoArticle";
 import SidebarVideo from "@/components/video/SidebarVideo";
+import NewsVideo from "@/components/video/NewsVideo";
+import Images from "@/components/images/Images";
 
 export default {
   components: {
@@ -1107,11 +1154,13 @@ export default {
     Devider,
     EnglishArtilce,
     SpecialReport,
-    ArtilceSection,
+    ArticleSection,
     ArtilceSlider,
     ArticleSliderTwo,
     VideoArticle,
     SidebarVideo,
+    NewsVideo,
+    Images,
   },
 };
 </script>

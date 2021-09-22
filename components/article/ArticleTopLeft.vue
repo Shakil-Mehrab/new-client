@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-full mb-6 rounded-md shadow-md sm:shadow-none">
+  <div class="relative h-full mb-6 rounded-md shadow sm:shadow-none">
     <a href="">
       <div class="">
         <img

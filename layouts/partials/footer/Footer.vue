@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-gray-900">
+  <footer class="bg-gray-700">
     <section class="text-white">
-      <div class="container mx-auto py-8">
+      <div class="container py-8 mx-auto">
         <div class="flex full">
           <div class="w-3/12 px-2 my-2">
             <div class="logo">
@@ -9,10 +9,10 @@
             </div>
             <div class="my-4">
               <ul>
-                <li class=" inline-block">
+                <li class="inline-block">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 inline-block text-red-600"
+                    class="inline-block w-6 h-6 text-red-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -30,7 +30,7 @@
                 <li class="inline-block mt-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 inline-block text-red-600"
+                    class="inline-block w-6 h-6 text-red-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -56,7 +56,7 @@
                 <li class="flex items-start mt-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 inline-block text-red-600"
+                    class="inline-block w-6 text-red-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -68,7 +68,7 @@
                       d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                     />
                   </svg>
-                  <div class="border-white px-2">
+                  <div class="px-2 border-white">
                     Ahsan Tower,<br />
                     6 Bir Uttam AK Khandaker Road, <br />
                     Mohakhali Commercial Area,<br />
@@ -78,7 +78,7 @@
                 <li class="flex items-start my-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 text-red-600"
+                    class="w-6 h-6 text-red-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -90,14 +90,14 @@
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <div class="border-white px-2">
+                  <div class="px-2 border-white">
                     Phone: +8 096 ৭৭৭ 322 or +8 02 9852431-5
                   </div>
                 </li>
                 <li class="flex items-start mt-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 text-red-600"
+                    class="w-6 h-6 text-red-600"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -109,9 +109,7 @@
                       d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <div class="border-white px-2">
-                    Fax: +8 02 9852360
-                  </div>
+                  <div class="px-2 border-white">Fax: +8 02 9852360</div>
                 </li>
               </ul>
             </div>
@@ -119,7 +117,7 @@
           <div class="w-3/12 px-2 my-2">
             <div class="my-4">
               <ul>
-                <li class="text-xl text-red-600 font-medium">Link</li>
+                <li class="text-xl font-medium text-red-600">Link</li>
 
                 <li class="flex justify-between my-4" v-for="n in 4" :key="n">
                   <a href="">Bangladesh</a>
@@ -131,7 +129,7 @@
           <div class="w-3/12 px-2 my-2">
             <div class="my-4">
               <ul>
-                <li class="text-xl text-red-600 font-medium">Latest News</li>
+                <li class="text-xl font-medium text-red-600">Latest News</li>
 
                 <li class="flex items-center my-4" v-for="n in 4" :key="n">
                   <div class="logo">
@@ -148,16 +146,16 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto px-2">
+      <div class="container px-2 mx-auto">
         <div
-          class="w-full  bg-red-600 flex justify-between items-center p-16 my-2"
+          class="flex items-center justify-between w-full p-16 my-2 bg-red-600"
         >
           <div>
             <span class="text-xl">Follow Us</span>
-            <span class="bg-white rounded-full p-2 text-black ml-2"
+            <span class="p-2 ml-2 text-black bg-white rounded-full"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 inline-block"
+                class="inline-block w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -169,10 +167,10 @@
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 /></svg
             ></span>
-            <span class="bg-white rounded-full p-2 text-black ml-2"
+            <span class="p-2 ml-2 text-black bg-white rounded-full"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 inline-block"
+                class="inline-block w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -195,14 +193,14 @@
           </div>
         </div>
       </div>
-      <div class="container mx-auto px-2">
+      <div class="container px-2 mx-auto">
         <div class="flex items-center justify-between w-full py-4">
           <div>
             &copy; 2021 All rights reserved Dhaka Bangla Media & Communication
             Ltd.
           </div>
           <div>
-            <a href="" class="border-r border-white px-2">Privacy Policy</a>
+            <a href="" class="px-2 border-r border-white">Privacy Policy</a>
             <a href="" class="px-2">Usage Terms</a>
           </div>
         </div>

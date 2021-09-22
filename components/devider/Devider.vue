@@ -5,16 +5,7 @@
     </div>
     <div class="relative flex items-center justify-between">
       <span
-        class="
-          pr-2
-          text-lg
-          font-bold
-          tracking-wider
-          text-gray-700 text-gray-900 text-red-700
-          bg-white
-          md:text-xl
-          whitespace-nowra
-        "
+        class="pr-2 text-lg font-bold tracking-wider text-gray-700 text-gray-900 text-red-700 bg-white  md:text-xl whitespace-nowra"
       >
         {{ title }}
       </span>
@@ -33,7 +24,7 @@
           hover:text-gray-700
         "
       >
-        <a href="" class="tracking-wider">View More</a>
+        <a href="" class="tracking-wider">আরো দেখুন</a>
       </button>
     </div>
   </div>
