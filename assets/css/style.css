@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
 .subscribe-bg-img {
     background-image: url("@/assets/images/dbc/bg.png");
     background-position: center;
@@ -12,4 +14,8 @@ body {
 .hide-left {
     margin-left: -20rem;
     visibility: hidden;
+}
+
+footer {
+    font-family: 'Arial', sans-serif;
 }

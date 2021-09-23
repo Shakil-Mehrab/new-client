@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
     mode: 'jit',
     purge: {
@@ -14,7 +15,10 @@ module.exports = {
         extend: {
             backgroundImage: theme => ({
                 'subscribe-img': "url('@/assets/images/dbc/bg.png')",
-            })
+            }),
+            colors: {
+                fuchsia: colors.fuchsia
+            }
         },
         screens: {
             'sm': '640px',

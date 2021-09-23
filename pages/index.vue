@@ -1,5 +1,10 @@
 <template>
   <main>
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-2 sm:px-0">
+        <DateTime />
+      </div>
+    </div>
     <AdvertiseItem class="md:hidden" />
 
     <div class="container mx-auto sm:px-6 lg:px-8">
@@ -150,6 +155,13 @@
       </div>
     </div>
     <AdvertiseItem class="md:hidden" />
+
+    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+      <div class="px-2">
+        <Stories />
+      </div>
+    </div>
+
     <!-- 4 grid  -->
     <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
@@ -1139,6 +1151,8 @@ import VideoArticle from "@/components/video/VideoArticle";
 import SidebarVideo from "@/components/video/SidebarVideo";
 import NewsVideo from "@/components/video/NewsVideo";
 import Images from "@/components/images/Images";
+import Stories from "@/components/stories/Stories";
+import DateTime from "@/components/dateTime/DateTime";
 
 export default {
   components: {
@@ -1161,6 +1175,8 @@ export default {
     SidebarVideo,
     NewsVideo,
     Images,
+    Stories,
+    DateTime,
   },
 };
 </script>

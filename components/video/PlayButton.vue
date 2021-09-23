@@ -1,26 +1,17 @@
 <template>
-  <div class="absolute bottom-0 px-1 pt-1 text-white bg-gray-900 rounded-tr-md">
-    fmdlk
+  <div class="absolute text-red-700 bottom-1 left-1 rounded-tr-md">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="w-4 h-4 bg-red-700 rounded-full"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
+      class="bg-white rounded-full w-7 h-7"
+      viewBox="0 0 20 20"
+      fill="currentColor"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-      />
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        fill-rule="evenodd"
+        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+        clip-rule="evenodd"
       />
     </svg>
-    <p class="text-xs">2:34</p>
+    <!-- <p class="text-xs">2:34</p> -->
   </div>
 </template>
