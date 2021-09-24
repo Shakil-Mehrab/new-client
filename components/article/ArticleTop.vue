@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-full rounded-md shadow sm:mb-6 sm:shadow-none">
-    <a href="">
+    <nuxt-link :to="{ name: 'news' }">
       <div class="">
         <img
           src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
@@ -11,7 +11,7 @@
 
       <div class="relative w-full">
         <div
-          class="left-0 right-0 w-full mx-auto text-center bg-white rounded-md  sm:shadow-md sm:w-10/12 sm:absolute sm:px-4 -bottom-20"
+          class="left-0 right-0 w-full mx-auto text-center bg-white rounded-md sm:shadow-md sm:w-10/12 sm:absolute sm:px-4 -bottom-20"
         >
           <div class="justify-center hidden my-4 sm:flex">
             <div
@@ -46,7 +46,7 @@
           </div>
         </div>
       </div>
-    </a>
+    </nuxt-link>
   </div>
 </template>
 
@@ -57,7 +57,7 @@ import Time from "@/components/date/Time";
 export default {
   components: {
     Date,
-    Time,
-  },
+    Time
+  }
 };
 </script>
