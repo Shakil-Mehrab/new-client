@@ -72,27 +72,72 @@
             Dashboard
           </a>
 
-          <a
-            href="#"
-            class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
-          >
-            <svg
-              class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+          <div class="h-8">
+            <a
+              href="#"
+              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-            </svg>
-            Team
-          </a>
+              <div class="flex">
+                <svg
+                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <span>Team</span>
+              </div>
+              <div class="text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="flex-shrink-0 w-4 h-4 mr-4 text-gray-400  group-hover:text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+            </a>
+            <div class="ml-4">
+              <a
+                href="#"
+                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
+                v-for="n in 10"
+                :key="n"
+              >
+                <svg
+                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                Team
+              </a>
+            </div>
+          </div>
 
           <a
             href="#"
