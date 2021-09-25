@@ -3,10 +3,10 @@ export default {
         port: 3333
     },
 
-    ngrok: {
-        authtoken: '1yPP89r0xEmoGOu2shTLrjeIbJR_7MYGRdReVNKjzxbD7Rdb5',
-        region: 'ap'
-    },
+    // ngrok: {
+    //     authtoken: '1yPP89r0xEmoGOu2shTLrjeIbJR_7MYGRdReVNKjzxbD7Rdb5',
+    //     region: 'ap'
+    // },
 
     head: {
 

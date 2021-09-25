@@ -18,6 +18,9 @@ module.exports = {
             }),
             colors: {
                 fuchsia: colors.fuchsia
+            },
+            transitionProperty: {
+                'height': 'height',
             }
         },
         screens: {
