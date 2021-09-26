@@ -10,7 +10,7 @@
       <div class="flex">
         <div class="w-4/12 mr-3">
           <img
-            src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+            src="https://i.picsum.photos/id/1069/600/300.jpg?hmac=xUqRdpwKgIa_i6muDOCha4JN9Emhvi7GTfxrdVht77g"
             alt=""
             class="w-full h-full rounded-md"
           />

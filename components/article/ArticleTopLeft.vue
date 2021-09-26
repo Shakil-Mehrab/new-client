@@ -3,7 +3,7 @@
     <a href="">
       <div class="">
         <img
-          src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+          src="https://i.picsum.photos/id/4/600/352.jpg?hmac=PXDqnUdxK05XvdLgkYExDtxfVDCes1vPgr30sizy5-A"
           alt=""
           class="w-full"
         />

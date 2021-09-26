@@ -26,9 +26,12 @@
             </div>
           </div>
           <!-- col 4  -->
-          <!-- <div class="order-3 w-full xl:w-2/12">
+          <div class="order-3 w-full xl:w-2/12">
+            <div class="mt-2 sm:my-6">
+              <Devider title="বাংলাদেশ" />
+            </div>
             <HeadingList :news="5" />
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -97,6 +100,32 @@
               <div class="">
                 <ArticleSection :news="3" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bangla List  -->
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="px-2 sm:px-0">
+        <div class="xl:space-x-6 xl:flex">
+          <!-- col 8 -->
+          <!-- <div class="w-full xl:w-10/12">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
+              <div
+                class="order-1 col-span-12 rounded-md 2md:col-span-7 2md:order-1"
+              >
+                <ArticleTop />
+              </div>
+            </div>
+          </div> -->
+          <!-- col 4  -->
+          <div class="order-3 w-full xl:w-2/12">
+            <div class="mt-2 sm:my-6">
+              <Devider title="বাংলাদেশ" />
+            </div>
+            <div class="">
+              <HeadingList :news="5" />
             </div>
           </div>
         </div>

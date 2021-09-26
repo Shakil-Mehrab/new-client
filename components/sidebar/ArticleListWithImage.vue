@@ -9,7 +9,7 @@
         <div class="grid grid-cols-12 gap-1 rounded-md shadow 2md:shadow-none">
           <div class="col-span-12 2md:col-span-4">
             <img
-              src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+              src="https://i.picsum.photos/id/839/600/300.jpg?hmac=Dr2iLvJcB1s9FuTCgLzzu6Qkta6FSghc02r5vLvOnu4"
               alt=""
               class="w-full"
             />

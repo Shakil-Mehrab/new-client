@@ -4,7 +4,7 @@
       <a href="">
         <div class="relative">
           <img
-            src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+            src="https://i.picsum.photos/id/866/600/300.jpg?hmac=Zlb4VEJZKg8E6U7UZGt9Mq8Ly0cZsb8ZloMpw_5WB2M"
             alt=""
             class="w-full"
           />

@@ -3,7 +3,7 @@
     <nuxt-link :to="{ name: 'news-slug' }">
       <div class="">
         <img
-          src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+          src="https://i.picsum.photos/id/1/600/352.jpg?hmac=KsMMAbhdaq2gklyc1QGAAqD_vl9K-sbylgzAC3Zu0ac"
           alt=""
           class="w-full"
         />

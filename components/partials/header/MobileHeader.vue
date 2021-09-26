@@ -1,5 +1,8 @@
 <template>
-  <div class="relative">
+  <div
+    class="relative w-full h-16 mobile-header"
+    :class="{ 'nav--pinned': pinned }"
+  >
     <Search
       :class="
         isSearch
@@ -95,7 +98,9 @@ import WhiteLogo from "@/layouts/logo/WhiteLogo";
 
 export default {
   data() {
-    return {};
+    return {
+      pinned: true,
+    };
   },
   components: {
     MobileSidebar,
@@ -104,6 +109,20 @@ export default {
   },
 
   methods: {
+    addScrollListener() {
+      let pxTrigger = 0;
+      const menuHeight = 64;
+      document.addEventListener("scroll", () => {
+        const pxFromTop = window.scrollY || window.pageYOffset;
+        if (pxFromTop > menuHeight) {
+          this.pinned = pxFromTop < pxTrigger;
+          pxTrigger = pxFromTop;
+        } else {
+          this.pinned = true;
+        }
+        console.log(pxFromTop);
+      });
+    },
     ...mapActions({
       openDrawer: "drawer/open",
       closeDrawer: "drawer/close",
@@ -111,7 +130,9 @@ export default {
       closeSearch: "search/closeSearch",
     }),
   },
-
+  mounted() {
+    this.addScrollListener();
+  },
   computed: {
     ...mapGetters({
       isOpen: "drawer/isOpen",
@@ -121,3 +142,14 @@ export default {
 };
 </script>
 
+<style>
+.mobile-header {
+  position: fixed;
+  top: -64px;
+  z-index: 99999;
+  transition: all 200ms ease;
+}
+.nav--pinned {
+  top: 0;
+}
+</style>
