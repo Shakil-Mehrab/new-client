@@ -2,7 +2,7 @@
   <div class="relative">
     <Search
       :class="
-        search
+        isSearch
           ? 'top-16 transform transition-all ease-in duration-600'
           : 'top-0 transform transition-all ease-out duration-600'
       "
@@ -45,7 +45,9 @@
             </svg>
           </button>
           <div class="flex items-center">
-            <a href="" class="block"> <WhiteLogo class="w-auto h-16" /> </a>
+            <nuxt-link to="/" class="block">
+              <WhiteLogo class="w-auto h-16" />
+            </nuxt-link>
           </div>
           <div class="flex items-center text-white">
             <svg
@@ -54,12 +56,29 @@
               viewBox="0 0 20 20"
               fill="currentColor"
               aria-hidden="true"
-              @click.prevent="search = !search"
+              @click.prevent="openSearch"
+              v-if="!isSearch"
             >
               <path
                 fill-rule="evenodd"
                 d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                 clip-rule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7 h-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              @click.prevent="closeSearch"
+              v-else
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </div>
@@ -76,9 +95,7 @@ import WhiteLogo from "@/layouts/logo/WhiteLogo";
 
 export default {
   data() {
-    return {
-      search: false,
-    };
+    return {};
   },
   components: {
     MobileSidebar,
@@ -90,12 +107,15 @@ export default {
     ...mapActions({
       openDrawer: "drawer/open",
       closeDrawer: "drawer/close",
+      openSearch: "search/openSearch",
+      closeSearch: "search/closeSearch",
     }),
   },
 
   computed: {
     ...mapGetters({
       isOpen: "drawer/isOpen",
+      isSearch: "search/isSearch",
     }),
   },
 };

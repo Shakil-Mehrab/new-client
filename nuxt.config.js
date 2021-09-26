@@ -44,6 +44,10 @@ export default {
 
     components: true,
 
+    router: {
+        middleware: ['DrawerMenuMiddleware'],
+    },
+
     buildModules: [
         ['@nuxtjs/tailwindcss'],
         '@nuxtjs/device',

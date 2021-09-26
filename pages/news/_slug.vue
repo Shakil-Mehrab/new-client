@@ -1,5 +1,5 @@
 <template>
-  <fragment>
+  <main>
     <section>
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="flex">
@@ -215,7 +215,7 @@
           <div class="grid grid-cols-12 gap-2">
             <div class="col-span-4" v-for="n in 8" :key="n">
               <div
-                class="flex items-center justify-between border rounded-md shadow"
+                class="flex items-center justify-between border rounded-md shadow "
               >
                 <!-- <div class="my-2 detail">
                   <p class="my-2 text-sm text-gray-500">
@@ -295,7 +295,7 @@
         </div>
       </div>
     </section>
-  </fragment>
+  </main>
 </template>
 <script>
 import MostPopular from "@/components/sidebar/MostPopular";
@@ -308,7 +308,7 @@ export default {
     MostPopular,
     ContactUs,
     ArticleSection,
-    NewsVideo
-  }
+    NewsVideo,
+  },
 };
 </script>

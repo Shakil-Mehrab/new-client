@@ -5,6 +5,7 @@
     aria-modal="true"
   >
     <div
+      @click.prevent="closeDrawer"
       class="fixed inset-0 bg-gray-600 bg-opacity-75"
       aria-hidden="true"
     ></div>
@@ -13,7 +14,7 @@
       <div class="absolute top-0 right-0 pt-2 -mr-12">
         <button
           type="button"
-          class="flex items-center justify-center w-10 h-10 ml-1 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          class="flex items-center justify-center w-10 h-10 ml-1 rounded-full  focus:outline-none focus:ring-0"
           @click.prevent="closeDrawer"
         >
           <span class="sr-only">Close sidebar</span>
@@ -36,12 +37,14 @@
       </div>
 
       <div class="flex items-center justify-between flex-shrink-0 px-4">
-        <RedLogo class="w-auto h-12" />
+        <nuxt-link to="/">
+          <RedLogo class="w-auto h-12" />
+        </nuxt-link>
         <div class="flex-shrink-0">
           <a href="">
             <button
               type="button"
-              class="relative inline-flex items-center px-1 text-2xl font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              class="relative inline-flex items-center px-1 text-2xl font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
             >
               LIVE
             </button>
@@ -52,7 +55,7 @@
         <nav class="px-2 space-y-1">
           <a
             href="#"
-            class="flex items-center px-2 py-2 text-base font-medium text-gray-900 bg-gray-100 rounded-md group"
+            class="flex items-center px-2 py-2 text-base font-medium text-gray-900 bg-gray-100 rounded-md  group"
           >
             <svg
               class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500"
@@ -72,14 +75,14 @@
             Dashboard
           </a>
 
-          <div class="group">
+          <div class="group" v-for="m in 5" :key="m">
             <a
               href="#"
-              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 group"
+              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
             >
               <div class="flex">
                 <svg
-                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-500"
+                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -95,7 +98,7 @@
                 </svg>
                 <span>Team</span>
               </div>
-              <div class="text-black">
+              <!-- <div class="text-black">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="flex-shrink-0 w-4 h-4 mr-4 text-gray-400 group-hover:text-gray-500"
@@ -110,19 +113,20 @@
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </div>
+              </div> -->
             </a>
             <div
-              class="invisible h-0 ml-4 transition-all ease-in-out transform duration-600 group-hover:visible group-hover:h-full"
+              class="ml-4 transition-all ease-in-out transform  duration-600 group-hover:visible group-hover:h-full"
             >
-              <a
-                href="#"
-                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 group"
-                v-for="n in 10"
+              <nuxt-link
+                :to="{ name: 'category' }"
+                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
+                v-for="n in 4"
                 :key="n"
+                @click.prevent="closeDrawer"
               >
                 <svg
-                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-500"
+                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400  group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -136,76 +140,8 @@
                     d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
                   />
                 </svg>
-                Team
-              </a>
-            </div>
-          </div>
-          <div class="group">
-            <a
-              href="#"
-              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 group"
-            >
-              <div class="flex">
-                <svg
-                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-                <span>Team</span>
-              </div>
-              <div class="text-black">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="flex-shrink-0 w-4 h-4 mr-4 text-gray-400 group-hover:text-gray-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </div>
-            </a>
-            <div
-              class="invisible h-0 ml-4 transition-all ease-in-out transform duration-600 group-hover:visible group-hover:h-full"
-            >
-              <a
-                href="#"
-                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md hover:bg-gray-50 hover:text-gray-900 group"
-                v-for="n in 10"
-                :key="n"
-              >
-                <svg
-                  class="flex-shrink-0 w-6 h-6 mr-4 text-gray-400 group-hover:text-gray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-                Team
-              </a>
+                Sub Team
+              </nuxt-link>
             </div>
           </div>
         </nav>
@@ -221,18 +157,18 @@ import RedLogo from "@/layouts/logo/RedLogo";
 
 export default {
   components: {
-    RedLogo
+    RedLogo,
   },
   methods: {
     ...mapActions({
-      closeDrawer: "drawer/close"
-    })
+      closeDrawer: "drawer/close",
+    }),
   },
 
   computed: {
     ...mapGetters({
-      isOpen: "drawer/isOpen"
-    })
-  }
+      isOpen: "drawer/isOpen",
+    }),
+  },
 };
 </script>

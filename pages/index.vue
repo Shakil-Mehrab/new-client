@@ -1,10 +1,10 @@
 <template>
   <main>
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <!-- <div class="container mx-auto sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <DateTime />
       </div>
-    </div>
+    </div> -->
     <AdvertiseItem class="md:hidden" />
 
     <div class="container mx-auto sm:px-6 lg:px-8">
