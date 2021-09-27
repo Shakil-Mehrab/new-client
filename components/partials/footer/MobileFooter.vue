@@ -128,58 +128,22 @@
         </div>
       </div>
     </section>
-    <section
-      class="fixed w-full h-16 transition-all duration-200 ease-in-out transform bg-red-700  -bottom-16 footer-fixed"
-      :class="{ 'footer--pinned': footer_pinned }"
-    >
-      <img
-        src="https://i.picsum.photos/id/5/600/352.jpg?hmac=PK5UuyyfQ5ieo5w5axb2dDEPbhtWCVoZhyMn69rjZBo"
-        class="rounded-none"
-        alt=""
-      />
-    </section>
+    <div>
+      <FooterPinnedAdd />
+    </div>
   </footer>
 </template>
 <script>
 import RedLogo from "@/layouts/logo/RedLogo";
 import SocialMedia from "@/components/partials/footer/SocialMedia";
+import FooterPinnedAdd from "@/components/partials/footer/FooterPinnedAdd";
 
 export default {
-  data() {
-    return {
-      footer_pinned: false,
-    };
-  },
   components: {
     RedLogo,
     SocialMedia,
-  },
-  methods: {
-    addScrollListener() {
-      let pxTrigger = 0;
-      const menuHeight = 64;
-      document.addEventListener("scroll", () => {
-        const pxFromTop = window.scrollY || window.pageYOffset;
-        if (pxFromTop > menuHeight) {
-          this.footer_pinned = pxFromTop > pxTrigger;
-          pxTrigger = pxFromTop;
-        } else {
-          this.footer_pinned = false;
-        }
-      });
-    },
-  },
-  mounted() {
-    this.addScrollListener();
+    FooterPinnedAdd,
   },
 };
 </script>
-<style>
-.footer-fixed {
-  z-index: 9999;
-}
 
-.footer--pinned {
-  bottom: 0;
-}
-</style>
