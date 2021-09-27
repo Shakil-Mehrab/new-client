@@ -26,12 +26,12 @@
             </div>
           </div>
           <!-- col 4  -->
-          <div class="order-3 w-full xl:w-2/12">
+          <!-- <div class="order-3 w-full xl:w-2/12">
             <div class="mt-2 sm:my-6">
               <Devider title="বাংলাদেশ" />
             </div>
             <HeadingList :news="5" />
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

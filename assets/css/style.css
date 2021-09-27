@@ -17,6 +17,18 @@ body {
     visibility: hidden;
 }
 
+.mobile-header {
+    z-index: 9999;
+}
+
+.mobile-sidebar {
+    z-index: 9999;
+}
+
+.nav--pinned {
+    top: 0;
+}
+
 footer {
     font-family: 'Arial', sans-serif;
 }
