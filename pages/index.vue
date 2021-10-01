@@ -7,7 +7,7 @@
     </div> -->
     <AdvertiseItem class="md:hidden" />
 
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -19,7 +19,13 @@
                 <ArticleListWithImage :news="4" :detail="true" />
               </div> -->
               <div
-                class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
+                class="
+                  order-1
+                  col-span-12
+                  rounded-md
+                  2md:col-span-7
+                  2md:order-1
+                "
               >
                 <ArticleTop />
               </div>
@@ -88,17 +94,17 @@
     </section> -->
     <!-- <AdvertiseItem /> -->
     <!-- Banglasesh -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
           <div class="w-full mt-1">
-            <div class="sm:my-6">
+            <!-- <div class="sm:my-6">
               <Devider title="বাংলাদেশ" />
-            </div>
+            </div> -->
             <div class="w-full">
               <div class="">
-                <ArticleSection :news="3" />
+                <ArticleSection :news="9" />
               </div>
             </div>
           </div>
@@ -106,7 +112,7 @@
       </div>
     </div>
     <!-- Bangla List  -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -122,7 +128,7 @@
           <!-- col 4  -->
           <div class="order-3 w-full xl:w-2/12">
             <div class="mt-2 sm:my-6">
-              <Devider title="বাংলাদেশ" />
+              <Devider title="সর্বশেষ" />
             </div>
             <div class="">
               <HeadingList :news="5" />
@@ -166,7 +172,7 @@
       </div>
     </div> -->
     <!-- International -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -185,14 +191,14 @@
     </div>
     <AdvertiseItem class="md:hidden" />
 
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2">
         <Stories />
       </div>
     </div>
 
-    <!-- 4 grid  -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <!-- 4 recreation  -->
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -202,7 +208,14 @@
             </div>
             <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+                class="
+                  order-2
+                  col-span-12
+                  sm:mt-12
+                  2md:mt-0
+                  2md:col-span-5
+                  2md:order-1
+                "
               >
                 <ArticleListWithImage :news="4" :detail="true" />
               </div>
@@ -221,7 +234,7 @@
       </div>
     </div>
     <!-- Sports -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -239,7 +252,7 @@
       </div>
     </div>
     <!-- English -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <EnglishArtilce :news="5" />
       </div>
@@ -257,12 +270,25 @@
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+                class="
+                  order-2
+                  col-span-12
+                  sm:mt-12
+                  2md:mt-0
+                  2md:col-span-5
+                  2md:order-1
+                "
               >
                 <ArticleSliderTwo />
               </div>
               <div
-                class="order-1 col-span-12 rounded-md  2md:col-span-7 2md:order-1"
+                class="
+                  order-1
+                  col-span-12
+                  rounded-md
+                  2md:col-span-7
+                  2md:order-1
+                "
               >
                 <ArticleTop />
               </div>
@@ -276,7 +302,7 @@
       </div>
     </div>
     <!-- Opinion -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -312,7 +338,7 @@
       </div>
     </div> -->
     <!-- News Block -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -400,7 +426,7 @@
     </div> -->
     <AdvertiseItem class="md:hidden" />
     <!-- video  -->
-    <div class="container mx-auto sm:px-6 lg:px-8">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
       <div class="px-2 sm:px-0">
         <div class="sm:my-6">
           <Devider title="বিশেষ প্রতিবেদনের খবর" />
@@ -410,7 +436,14 @@
           <div class="w-full xl:w-10/12">
             <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div
-                class="order-2 col-span-12  sm:mt-12 2md:mt-0 2md:col-span-5 2md:order-1"
+                class="
+                  order-2
+                  col-span-12
+                  sm:mt-12
+                  2md:mt-0
+                  2md:col-span-5
+                  2md:order-1
+                "
               >
                 <VideoArticle :news="4" :detail="true" />
               </div>
@@ -429,7 +462,7 @@
       </div>
     </div>
     <!-- sidebar Video  -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -521,8 +554,8 @@
     </section> -->
     <!-- advertisement  -->
     <AdvertiseItem />
-    <!-- News Video  -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <!-- সংবাদ ভিডিও  -->
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->
@@ -541,7 +574,7 @@
     </div>
     <AdvertiseItem class="md:hidden" />
     <!-- Dbc Special news  -->
-    <div class="container mx-auto sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
       <div class="sm:px-0">
         <div class="xl:space-x-6 xl:flex">
           <!-- col 8 -->

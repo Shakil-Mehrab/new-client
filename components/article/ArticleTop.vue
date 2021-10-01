@@ -31,7 +31,7 @@
               Covid
             </div>
           </div>
-          <div class="mt-2 sm:my-8">
+          <div class="py-2 mt-2 sm:my-8">
             <div class="order-2 title-large sm:order-1">
               নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ t
             </div>

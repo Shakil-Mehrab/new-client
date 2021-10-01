@@ -14,7 +14,7 @@
           "
         />
         <div
-          class="relative flex mb-2 overflow-hidden bg-gray-100 border-b shadow-md  mobile-sidebar"
+          class="relative flex mb-2 overflow-hidden bg-red-100 shadow-md  mobile-sidebar"
         >
           <!-- navigation bar  -->
           <div class="flex flex-col flex-1 w-0 overflow-hidden">

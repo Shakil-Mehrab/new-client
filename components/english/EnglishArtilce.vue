@@ -7,7 +7,7 @@
         </div>
         <div class="relative flex items-center justify-between">
           <span
-            class="pr-2 text-lg font-bold tracking-wider text-gray-700 text-gray-900 text-red-700 bg-white  md:text-xl whitespace-nowra"
+            class="pr-2 text-lg font-bold tracking-wider text-red-700  bg-gray-50 md:text-xl whitespace-nowra"
           >
             English
           </span>
@@ -21,8 +21,8 @@
               text-sm
               leading-5
               font-medium
-              text-gray-400
-              bg-white
+              text-gray-500
+              bg-gray-50
               hover:text-gray-700
             "
           >

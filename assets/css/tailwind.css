@@ -5,6 +5,10 @@
     @apply text-gray-700 text-base leading-none transition duration-500 ease-in-out tracking-wider font-normal
 }
 
+body {
+    @apply bg-gray-50
+}
+
 .title:hover {
     @apply text-red-700
 }

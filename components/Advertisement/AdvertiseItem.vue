@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-3 mb-2 sm:my-8 banner">
+  <section class="my-2 sm:my-8 banner">
     <div class="container px-2 mx-auto sm:px-6 lg:px-8">
       <div class="flex justify-center">
         <div class="w-full md:max-w-6xl">

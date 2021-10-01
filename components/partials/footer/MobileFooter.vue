@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-gray-700">
-    <section class="text-gray-300">
+    <section class="pb-16 text-gray-300">
       <div class="container py-6 mx-auto">
         <div class="px-2 tracking-wide">
           <div class="flex justify-center">

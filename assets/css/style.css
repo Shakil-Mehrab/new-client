@@ -10,6 +10,7 @@
 body {
     font-family: Kiron, Arial, sans-serif !important;
     padding-top: 64px;
+    /* background: white; */
 }
 
 .hide-left {
@@ -27,6 +28,14 @@ body {
 
 .nav--pinned {
     top: 0;
+}
+
+.footer-fixed {
+    z-index: 9999;
+}
+
+.footer--pinned {
+    bottom: 0;
 }
 
 footer {

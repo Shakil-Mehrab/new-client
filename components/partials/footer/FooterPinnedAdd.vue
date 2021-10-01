@@ -1,6 +1,16 @@
 <template>
   <div
-    class="fixed w-full h-16 transition-all duration-200 ease-in-out transform  -bottom-16 footer-fixed"
+    class="
+      fixed
+      w-full
+      h-16
+      transition-all
+      duration-200
+      ease-in-out
+      transform
+      -bottom-16
+      footer-fixed
+    "
     :class="{ 'footer--pinned': footer_pinned }"
   >
     <img
@@ -37,12 +47,3 @@ export default {
   },
 };
 </script>
-<style>
-.footer-fixed {
-  z-index: 9999;
-}
-
-.footer--pinned {
-  bottom: 0;
-}
-</style>

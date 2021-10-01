@@ -8,10 +8,11 @@
       :paginationPadding="4"
       :paginationSize="4"
       :navigationClickTargetSize="20"
+      :navigationEnabled="true"
       class="relative product-slider"
     >
       <slide v-for="n in 4" :key="n" class="px-1">
-        <div>
+        <div class="mb-1">
           <ArticleListWithImage :news="2" :detail="true" />
         </div>
       </slide>
@@ -37,11 +38,9 @@ export default {
 </script>
 <style>
 .VueCarousel-navigation-next[data-v-453ad8cd] {
-  left: 290px !important;
-  border: 1px solid gray;
-  background: gray;
+  margin-left: -46px !important;
   opacity: 80%;
-  /* :navigationEnabled="true" */
+  /* :navigationNextLabel="'&gt;'" */
 }
 </style>
 

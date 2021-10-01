@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-wrap 2md:block">
+  <div class="grid grid-cols-12 gap-2">
     <div
-      class="w-6/12 py-1  md:py-3 odd:pr-1 even:pl-1 md:odd:pr-3 md:even:pl-3 2md:w-full 2md:even:pl-0 2md:odd:pr-0 2md:border-b 2md:block 2md:first:pt-0"
+      class="col-span-6 border border-b-0 rounded-md shadow"
       v-for="n in news"
       :key="n"
     >
       <a href="">
-        <div class="grid grid-cols-12 gap-1 rounded-md shadow 2md:shadow-none">
+        <div class="grid grid-cols-12 gap-1 2md:shadow-none">
           <div class="col-span-12 2md:col-span-4">
             <img
               src="https://i.picsum.photos/id/839/600/300.jpg?hmac=Dr2iLvJcB1s9FuTCgLzzu6Qkta6FSghc02r5vLvOnu4"
