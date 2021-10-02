@@ -1,5 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+/* @font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('ttf');
+} */
+
 @tailwind utilities;
 .title {
     @apply text-gray-700 text-base leading-none transition duration-500 ease-in-out tracking-wider font-normal

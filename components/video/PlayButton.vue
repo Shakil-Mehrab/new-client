@@ -10,7 +10,7 @@
       viewBox="0 0 511.999 511.999"
       style="enable-background: new 0 0 511.999 511.999"
       xml:space="preserve"
-      class="w-6 h-6 text-white"
+      class="w-6 h-6 text-white bg"
       fill="white"
     >
       <g>

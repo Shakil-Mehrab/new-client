@@ -1,16 +1,16 @@
 <template>
-  <footer class="bg-gray-700">
+  <footer class="bg-gray-800">
     <section class="pb-16 text-gray-300">
       <div class="container py-6 mx-auto">
         <div class="px-2 tracking-wide">
           <div class="flex justify-center">
             <RedLogo class="w-auto h-16" />
           </div>
-          <div class="grid grid-cols-12 mt-6">
+          <div class="grid grid-cols-12 mt-6 text-sm">
             <div class="col-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="inline-block w-6 h-6 text-red-600"
+                class="inline-block w-5 h-5 text-red-600"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -38,11 +38,11 @@
               </p>
             </div>
           </div>
-          <div class="grid grid-cols-12 mt-3">
+          <div class="grid grid-cols-12 mt-3 text-sm">
             <div class="col-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6 text-red-700"
+                class="w-5 h-5 text-red-700"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -69,11 +69,11 @@
               </p>
             </div>
           </div>
-          <div class="grid grid-cols-12 mt-3">
+          <div class="grid grid-cols-12 mt-3 text-sm">
             <div class="col-span-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5 text-red-700"
+                class="w-4 h-4 text-red-700"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -96,7 +96,7 @@
         <div class="px-2">
           <div class="flex items-center justify-center w-full my-2">
             <div>
-              <div class="mb-2 text-xl text-center">Download Mobile App</div>
+              <div class="mb-2 text-lg text-center">Download Mobile App</div>
               <a href="" target="_blank">
                 <img
                   src="@/assets/images/dbc/app.png"
@@ -113,7 +113,7 @@
           <div class="border-t border-gray-400"></div>
         </div>
       </div>
-      <div class="container mx-auto mt-3">
+      <div class="container mx-auto mt-3 text-sm tracking-tight">
         <div class="px-2">
           <div class="text-center">
             &copy; 2021 All rights reserved Dhaka Bangla Media

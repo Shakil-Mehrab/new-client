@@ -8,11 +8,12 @@
       :key="n"
     >
       <div class="flex">
-        <div class="w-4/12 mr-3">
+        <div class="flex w-4/12 mr-3 space-x-1">
+          <div class="inline-block w-0.5 border-l-2 border-red-700"></div>
           <img
             src="https://i.picsum.photos/id/1069/600/300.jpg?hmac=xUqRdpwKgIa_i6muDOCha4JN9Emhvi7GTfxrdVht77g"
             alt=""
-            class="w-full h-full rounded-md"
+            class="h-full rounded-md"
           />
         </div>
         <div class="w-8/12 mt-1">

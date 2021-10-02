@@ -21,7 +21,10 @@ module.exports = {
             },
             transitionProperty: {
                 'height': 'height',
-            }
+            },
+            // fontFamily: {
+            //   'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+            // }
         },
         screens: {
             'sm': '640px',

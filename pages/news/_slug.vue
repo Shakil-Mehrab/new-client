@@ -9,34 +9,23 @@
                 <span class="inline-block w-4 h-1 bg-red-600"></span>
                 <span class="text-red-600">PLATFORM-TEST</span>
               </p>
-              <h4 class="my-2 text-2xl font-medium text-gray-700">
+              <h4 class="my-1 text-xl font-medium text-gray-700">
                 নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
               </h4>
-              <p class="my-2 text-gray-400">
+              <!-- <p class="my-1 text-gray-400">
                 উদ্বোধনের একদিন পরও চালু হয়নি করোনার ফিল্ড হাসপাতাল
-              </p>
+              </p> -->
             </div>
             <div class="flex justify-between w-full">
               <div class="flex items-center">
-                <img src="@/assets/images/dbc/circle.png" alt="" />
+                <nuxt-link to="/">
+                  <WhiteLogo class="w-10 h-10 bg-red-700 rounded-full" />
+                </nuxt-link>
                 <div class="mx-2">
-                  <h4 class="text-xl font-medium">Dbc News</h4>
-                  <p class="text-base font-medium text-gray-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="inline-block w-6 h-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      /></svg
-                    >Tuesday, June 29, 2021
-                  </p>
+                  <h4 class="text-lg font-medium text-gray-700">Dbc News</h4>
+                  <div>
+                    <Date />
+                  </div>
                 </div>
               </div>
               <!-- <div class="">
@@ -66,7 +55,7 @@
             </div>
             <div class="w-full my-4">
               <img src="@/assets/images/dbc/detail.png" alt="" class="w-full" />
-              <p class="mt-4 text-sm text-gray-500">
+              <p class="mt-4 text-sm tracking-wider text-gray-600">
                 দেশে গত ২৪ ঘণ্টায় করোনাভাইরাসে আক্রান্ত হয়ে মারা গেছেন ২৪৫ জন। এ
                 নিয়ে করোনায় দেশে মোট মৃতের সংখ্যা দাঁড়িয়েছে ২২ হাজার ৮৯৭ জনে। এ
                 সময় নতুন করে এই ভাইরাসে শনাক্ত হয়েছেন ১১ হাজার ৪৬৩ জন। এ নিয়ে
@@ -182,7 +171,7 @@
             </div>
             <div class="w-full">
               <div class="">
-                <ArticleSection :news="3" />
+                <ArticleSection :news="10" />
               </div>
             </div>
           </div>
@@ -197,16 +186,16 @@
             <!-- <div class="px-2 sm:my-6">
               <Devider title="সংবাদ ভিডিও" />
             </div> -->
-            <div class="w-full">
+            <!-- <div class="w-full">
               <div class="">
                 <NewsVideo :news="3" />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
-    <section class="my-4 slide-section">
+    <!-- <section class="my-4 slide-section">
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="px-2">
           <div>
@@ -217,7 +206,7 @@
               <div
                 class="flex items-center justify-between border rounded-md shadow "
               >
-                <!-- <div class="my-2 detail">
+                <div class="my-2 detail">
                   <p class="my-2 text-sm text-gray-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +226,7 @@
                   <h4 class="text-base font-medium text-gray-700">
                     নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
                   </h4>
-                </div> -->
+                </div>
                 <div class="w-full text-center">
                   <span class="text-base text-gray-700">(District News)</span>
                 </div>
@@ -246,8 +235,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section>
+    </section> -->
+    <!-- <section>
       <div class="container mx-auto mb-2 sm:px-6 lg:px-8">
         <div class="px-2">
           <div>
@@ -262,7 +251,7 @@
                   class="w-full rounded-md"
                 />
               </div>
-              <!-- <div class="my-2 detail">
+              <div class="my-2 detail">
                 <div class="flex">
                   <p class="text-sm text-gray-500 uppercase">Covid</p>
                 </div>
@@ -289,12 +278,12 @@
                   নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ. নারীর শরীরে
                   পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
                 </p>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 </template>
 <script>
@@ -302,6 +291,8 @@ import MostPopular from "@/components/sidebar/MostPopular";
 import ContactUs from "@/components/sidebar/ContactUs";
 import ArticleSection from "@/components/section/ArticleSection";
 import NewsVideo from "@/components/video/NewsVideo";
+import WhiteLogo from "@/layouts/logo/WhiteLogo";
+import Date from "@/components/date/Date";
 
 export default {
   components: {
@@ -309,6 +300,8 @@ export default {
     ContactUs,
     ArticleSection,
     NewsVideo,
+    WhiteLogo,
+    Date,
   },
 };
 </script>
