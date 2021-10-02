@@ -135,7 +135,7 @@
 </template>
 <script>
 import RedLogo from "@/layouts/logo/RedLogo";
-import SocialMedia from "@/components/partials/footer/SocialMedia";
+import SocialMedia from "@/components/social/SocialMedia";
 import FooterPinnedAdd from "@/components/partials/footer/FooterPinnedAdd";
 
 export default {

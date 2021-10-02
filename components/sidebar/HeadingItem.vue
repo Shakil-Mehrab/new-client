@@ -1,13 +1,13 @@
 <template>
   <div class="py-3 border-b-2">
-    <div class="date" v-if="kicker">
+    <!-- <div class="date" v-if="kicker">
       <span class="inline-block w-4 h-1 bg-red-600"></span>
       <a href="" class="text-red-600 uppercase">Covid</a>
-    </div>
+    </div> -->
     <div class="flex w-full my-3" v-if="category">
       <p class="date">Covid World</p>
     </div>
-    <a href="">
+    <a href="block before:content-['iljkll']">
       <h4 class="mt-3 title">নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ</h4>
       <p class="mt-3 date" v-if="date">
         <svg

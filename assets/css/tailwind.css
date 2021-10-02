@@ -1,10 +1,9 @@
 @tailwind base;
 @tailwind components;
-
-/* @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), url(./fonts/Roboto-Regular.ttf) format('ttf');
-} */
+@font-face {
+    font-family: 'Kiron';
+    src: url('~/assets/fonts/kiron/Kiron.eot?#iefix') format('embedded-opentype'), url('~/assets/fonts/kiron/Kiron.woff') format('woff'), url('~/assets/fonts/kiron/Kiron.ttf') format('truetype'), url('~/assets/fonts/kiron/Kiron.otf') format('truetype'), url('~/assets/fonts/kiron/Kiron.svg#svgFontName') format('svg');
+}
 
 @tailwind utilities;
 .title {

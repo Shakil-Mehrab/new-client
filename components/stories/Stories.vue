@@ -45,7 +45,7 @@
               class="block p-1 transition transform bg-white rounded-md  hover:-rotate-6"
             >
               <img
-                class="rounded-md w-114 h-114"
+                class="w-auto h-20 rounded-md"
                 src="https://placekitten.com/201/200"
                 alt="cute kitty"
               />

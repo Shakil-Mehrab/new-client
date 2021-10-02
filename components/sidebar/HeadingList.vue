@@ -5,7 +5,7 @@
       v-for="n in 5"
       :key="n"
     >
-      <div class="">
+      <div class="px-1">
         <ColoredKicker class="mb-1" />
         <a href="block">
           <h4 class="title">নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ</h4>

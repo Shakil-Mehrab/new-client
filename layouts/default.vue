@@ -1,7 +1,7 @@
 <template>
   <div>
     <DesktopView v-if="$device.isDesktop"></DesktopView>
-    <MobileView v-else></MobileView>
+    <MobileView v-else class="font-siyamrupali"></MobileView>
   </div>
 </template>
 <script>

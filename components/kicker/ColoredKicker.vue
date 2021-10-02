@@ -1,6 +1,20 @@
 <template>
   <p class="text-base font-medium text-gray-500">
-    <span class="inline-block w-4 h-1 bg-red-600"></span>
-    <span class="text-red-600 uppercase">Covid</span>
+    <span
+      class="
+        text-red-600
+        uppercase
+        relative
+        pl-3
+        before:bg-red-700
+        before:block
+        before:w-2
+        before:h-0.5
+        before:left-0
+        before:top-1/2
+        before:absolute
+      "
+      >Covid</span
+    >
   </p>
 </template>

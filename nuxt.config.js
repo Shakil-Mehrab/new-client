@@ -33,7 +33,7 @@ export default {
 
     css: [
         '@/assets/css/style.css',
-        '@/assets/fonts/kiron/kiron.css'
+        // '@/assets/fonts/kiron/kiron.css'
 
     ],
 

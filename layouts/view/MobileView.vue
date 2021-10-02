@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="font-kiron">
     <MobileHeader />
     <nuxt />
     <MobileFooter />
