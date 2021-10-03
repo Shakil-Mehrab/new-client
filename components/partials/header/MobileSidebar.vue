@@ -41,14 +41,30 @@
           <RedLogo class="w-auto h-12" />
         </nuxt-link>
         <div class="flex-shrink-0">
-          <a href="">
+          <nuxt-link :to="{ name: 'live' }">
             <button
               type="button"
-              class="relative inline-flex items-center px-1 text-2xl font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm  hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+              class="
+                relative
+                inline-flex
+                items-center
+                px-1
+                pt-0.5
+                text-2xl
+                font-medium
+                text-white
+                bg-red-600
+                border border-transparent
+                rounded-md
+                shadow-sm
+                hover:bg-red-700
+                focus:outline-none
+                focus:ring-2 focus:ring-offset-2 focus:ring-red-500
+              "
             >
               LIVE
             </button>
-          </a>
+          </nuxt-link>
         </div>
       </div>
       <div class="flex-1 h-0 mt-2 overflow-y-auto">

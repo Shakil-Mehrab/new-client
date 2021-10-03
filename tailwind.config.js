@@ -22,10 +22,10 @@ module.exports = {
             transitionProperty: {
                 'height': 'height',
             },
-            fontFamily: {
-                'kiron': "'Kiron', 'Arial', 'sans-serif'",
-                'siyamrupali': "'Siyamrupali', 'Arial', 'sans-serif'",
-            }
+            // fontFamily: {
+            //     'kiron': "'Kiron', 'Arial', 'sans-serif'",
+            //     'siyamrupali': "'Siyamrupali', 'Arial', 'sans-serif'",
+            // },
         },
         screens: {
             'sm': '640px',
@@ -34,7 +34,8 @@ module.exports = {
             'lg': '1024px',
             'xl': '1280px',
             '2xl': '1536px',
-        }
+        },
+
     },
     variants: {
         extend: {},

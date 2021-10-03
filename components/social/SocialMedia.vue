@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex space-x-2">
     <!-- facebook  -->
     <a href="" target="_blank">
       <svg
@@ -94,7 +94,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
-        class="w-8 h-8"
+        class="w-7 h-7"
       >
         <path
           fill="#FF3D00"
@@ -109,7 +109,7 @@
         enable-background="new 0 0 512 512"
         viewBox="0 0 512 512"
         xmlns="http://www.w3.org/2000/svg"
-        class="w-8 h-8"
+        class="w-6 h-6"
       >
         <g>
           <path d="m444.5 15.519h-188.5l-188.5 150.889h377z" fill="#0f9d58" />

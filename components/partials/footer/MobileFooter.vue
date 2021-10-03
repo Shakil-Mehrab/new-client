@@ -1,13 +1,13 @@
 <template>
-  <footer class="bg-gray-800">
-    <section class="pb-16 text-gray-300">
+  <footer class="pb-1 bg-gray-200">
+    <section class="text-sm leading-normal tracking-wide text-gray-700">
       <div class="container py-6 mx-auto">
-        <div class="px-2 tracking-wide">
+        <div class="px-3 leading-normal tracking-wide">
           <div class="flex justify-center">
             <RedLogo class="w-auto h-16" />
           </div>
-          <div class="grid grid-cols-12 mt-6 text-sm">
-            <div class="col-span-1">
+          <div class="mt-6">
+            <div class="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="inline-block w-5 h-5 text-red-600"
@@ -22,8 +22,9 @@
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
               </svg>
+              <span class="ml-1 text-base font-semibold">Authority</span>
             </div>
-            <div class="col-span-11">
+            <div class="ml-3">
               <p class="inline-block">
                 <span class=""> Chairman :</span>
                 <span class="">Iqbal Sobhan Chowdhury</span>
@@ -38,8 +39,8 @@
               </p>
             </div>
           </div>
-          <div class="grid grid-cols-12 mt-3 text-sm">
-            <div class="col-span-1">
+          <div class="mt-6">
+            <div class="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5 text-red-700"
@@ -60,17 +61,18 @@
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
+              <span class="ml-1 text-base font-semibold">Address</span>
             </div>
-            <div class="col-span-11">
-              <p class="inline-block text-gray-300">
+            <div class="ml-3">
+              <p class="inline-block text-gray-700">
                 Ahsan Tower,<br />
                 76 Bir Uttam AK Khandaker Road, <br />
                 Mohakhali Commercial Area, Dhaka - 1213, Bangladesh
               </p>
             </div>
           </div>
-          <div class="grid grid-cols-12 mt-3 text-sm">
-            <div class="col-span-1">
+          <div class="mt-6">
+            <div class="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-4 h-4 text-red-700"
@@ -81,12 +83,13 @@
                   d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
                 />
               </svg>
+              <span class="ml-1 text-base font-semibold">Contact</span>
             </div>
-            <div class="col-span-11">
-              <p class="inline-block text-gray-300">
-                Phone: +8096 777322 or +802 9852431-5
+            <div class="ml-3">
+              <p class="inline-block text-gray-700">
+                Phone: +8096 777322 <br />or +802 9852431-5
               </p>
-              <p class="inline-block text-gray-300">Fax: +802 9852360</p>
+              <p class="inline-block text-gray-700">Fax: +802 9852360</p>
             </div>
           </div>
         </div>
@@ -96,7 +99,9 @@
         <div class="px-2">
           <div class="flex items-center justify-center w-full my-2">
             <div>
-              <div class="mb-2 text-lg text-center">Download Mobile App</div>
+              <div class="mb-2 text-base font-semibold text-center">
+                Download Mobile App
+              </div>
               <a href="" target="_blank">
                 <img
                   src="@/assets/images/dbc/app.png"
@@ -113,22 +118,22 @@
           <div class="border-t border-gray-400"></div>
         </div>
       </div>
-      <div class="container mx-auto mt-3 text-sm tracking-tight">
+      <div class="container mx-auto mt-3 leading-normal tracking-wide">
         <div class="px-2">
-          <div class="text-center">
-            &copy; 2021 All rights reserved Dhaka Bangla Media
-          </div>
           <div class="flex items-center justify-between w-full py-3">
-            <div class="overflow-hidden leading-tight">
-              <a href="" class="px-1 border-r border-white">Privacy Policy</a>
+            <div class="overflow-hidden leading-normal">
+              <a href="" class="px-1">Privacy Policy</a><br />
               <a href="" class="px-1">Usage Terms</a>
             </div>
             <SocialMedia />
           </div>
+          <div class="text-sm text-center">
+            &copy; 2021 All rights reserved Dhaka Bangla Media
+          </div>
         </div>
       </div>
     </section>
-    <div>
+    <div class="mt-16">
       <FooterPinnedAdd />
     </div>
   </footer>

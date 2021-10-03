@@ -1,8 +1,8 @@
 
 <template>
-  <div class="flex space-x-4">
+  <div class="flex space-x-2">
     <!-- facebook  -->
-    <a href="" class="block p-2 bg-gray-300 rounded-md" target="_blank">
+    <a href="" class="block p-2 bg-gray-200 rounded-md" target="_blank">
       <svg
         enable-background="new 0 0 24 24"
         viewBox="0 0 24 24"
@@ -16,7 +16,7 @@
       </svg>
     </a>
     <!-- twitter  -->
-    <a href="" class="block p-2 bg-gray-300 rounded-md" target="_blank">
+    <a href="" class="block p-2 bg-gray-200 rounded-md" target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -40,7 +40,7 @@
       </svg>
     </a>
     <!-- instagram  -->
-    <a href="" class="block p-2 bg-gray-300 rounded-md" target="_blank">
+    <a href="" class="block p-2 bg-gray-200 rounded-md" target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 48 48"
@@ -93,7 +93,7 @@
     </a>
 
     <!-- google news  -->
-    <a href="" class="block p-2 bg-gray-300 rounded-md" target="_blank">
+    <a href="" class="block p-2 bg-gray-200 rounded-md" target="_blank">
       <svg
         id="Capa_1"
         enable-background="new 0 0 512 512"

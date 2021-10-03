@@ -13,6 +13,7 @@
         before:left-0
         before:top-1/2
         before:absolute
+        text-sm
       "
       >Covid</span
     >

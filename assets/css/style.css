@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.maateen.me/solaiman-lipi/font.css');
 .subscribe-bg-img {
     background-image: url("@/assets/images/dbc/bg.png");
     background-position: center;
@@ -8,7 +8,7 @@
 }
 
 body {
-    /* font-family: Kiron, Arial, sans-serif !important; */
+    font-family: 'SolaimanLipi', Arial, sans-serif !important;
     padding-top: 64px;
 }
 
@@ -38,5 +38,25 @@ body {
 }
 
 footer {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+.english {
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+/* @media (max-width: 640px) {
+  .detail {
+      @apply hidden
+  }
+  .title {
+      @apply text-sm font-semibold text-gray-500 leading-none
+  }
+  .title-large {
+      @apply px-2 text-left text-base font-semibold text-gray-500 leading-none
+  }
+  img {
+      @apply rounded-b-none
+  }
+} */

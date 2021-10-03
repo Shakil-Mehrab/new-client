@@ -3,32 +3,50 @@
     <section>
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="flex">
-          <div class="w-full px-2">
-            <div class="w-full">
-              <p class="text-base font-medium text-gray-500">
-                <span class="inline-block w-4 h-1 bg-red-600"></span>
-                <span class="text-red-600">PLATFORM-TEST</span>
-              </p>
-              <h4 class="my-1 text-xl font-medium text-gray-700">
-                নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
-              </h4>
-              <!-- <p class="my-1 text-gray-400">
+          <div class="w-full">
+            <div class="px-2">
+              <div class="w-full">
+                <p
+                  class="
+                    text-base
+                    font-medium
+                    text-gray-500
+                    relative
+                    pl-3
+                    before:bg-red-700
+                    before:block
+                    before:w-2
+                    before:h-0.5
+                    before:left-0
+                    before:top-1/2
+                    before:absolute
+                  "
+                >
+                  <!-- <span class="inline-block w-4 h-1 bg-red-600"></span> -->
+                  <span class="text-sm text-red-600">PLATFORM-TEST</span>
+                </p>
+                <h4 class="my-1 detail-large">
+                  নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+                </h4>
+                <!-- <p class="my-1 text-gray-400">
                 উদ্বোধনের একদিন পরও চালু হয়নি করোনার ফিল্ড হাসপাতাল
               </p> -->
-            </div>
-            <div class="flex justify-between w-full">
-              <div class="flex items-center">
-                <nuxt-link to="/">
-                  <WhiteLogo class="w-10 h-10 bg-red-700 rounded-full" />
-                </nuxt-link>
-                <div class="mx-2">
-                  <h4 class="text-lg font-medium text-gray-700">Dbc News</h4>
-                  <div>
-                    <Date />
+              </div>
+              <div class="flex justify-between w-full mt-2">
+                <div class="flex items-center">
+                  <nuxt-link to="/">
+                    <WhiteLogo class="w-10 h-10 bg-red-700 rounded-full" />
+                  </nuxt-link>
+                  <div class="mx-2">
+                    <h4 class="-mb-1 text-base font-semibold text-gray-700">
+                      ডিবিসি নিউজ
+                    </h4>
+                    <div>
+                      <Date />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="">
+                <!-- <div class="">
                 <ul class="flex">
                   <li
                     class="p-2 mx-2 bg-gray-100 rounded-md"
@@ -52,17 +70,24 @@
                   </li>
                 </ul>
               </div> -->
+              </div>
             </div>
-            <div class="w-full my-4">
-              <img src="@/assets/images/dbc/detail.png" alt="" class="w-full" />
-              <div class="px-2">
-                <div class="mt-3">
+            <div class="my-2">
+              <img
+                src="https://asset1.dbcnews.tv/storage/images/a349bedb-3a1d-4b45-823d-cedf3b3b05de.webp"
+                alt=""
+                class="w-full rounded-none"
+              />
+            </div>
+            <div class="w-full px-4">
+              <div class="">
+                <div class="">
                   <SocialMediaColorless />
                 </div>
-                <h4 class="my-3 text-base font-medium text-red-700">
+                <h4 class="my-2 text-lg font-semibold text-gray-700">
                   নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
                 </h4>
-                <p class="mt-2 text-sm tracking-wider text-gray-600">
+                <p class="text-lg leading-tight tracking-wide text-gray-600">
                   দেশে গত ২৪ ঘণ্টায় করোনাভাইরাসে আক্রান্ত হয়ে মারা গেছেন ২৪৫ জন।
                   এ নিয়ে করোনায় দেশে মোট মৃতের সংখ্যা দাঁড়িয়েছে ২২ হাজার ৮৯৭
                   জনে। এ সময় নতুন করে এই ভাইরাসে শনাক্ত হয়েছেন ১১ হাজার ৪৬৩ জন।
@@ -160,12 +185,30 @@
         </div>
       </div>
     </section>
-    <div class="container mx-auto mb-2 sm:px-6 lg:px-8 md:hidden">
+    <div class="container mx-auto my-2 sm:px-6 lg:px-8 md:hidden">
       <div class="px-2 sm:px-0">
-        <ul class="grid grid-cols-12 gap-2">
-          <li class="col-span-4 text-center" v-for="n in 6" :key="n">
-            <a href="" class="block bg-gray-100 border-2 rounded-md">Tags</a>
+        <ul class="flex flex-wrap items-center space-x-1">
+          <li
+            class="block p-1 px-2 mt-2 text-center text-red-700 border border-red-100 rounded-full  bg-red-50"
+            v-for="n in 6"
+            :key="n"
+          >
+            <a href="" class="">বিমান </a>
           </li>
+          <li
+            class="block p-1 px-2 mt-2 text-center text-red-700 border border-red-100 rounded-full  bg-red-50"
+            v-for="n in 6"
+            :key="n"
+          >
+            <a href="" class="">বিমান অভিযোগ </a>
+          </li>
+          <!-- <li class="p-1 text-center" v-for="n in 6" :key="n">
+            <a
+              href=""
+              class="block px-2 py-1 text-red-700 border border-red-100 rounded-full bg-red-50"
+              >বিমান অভিযোগ
+            </a>
+          </li> -->
         </ul>
       </div>
     </div>
