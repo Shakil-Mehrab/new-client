@@ -24,7 +24,9 @@
           hover:text-gray-700
         "
       >
-        <a href="" class="tracking-wider">আরো দেখুন</a>
+        <nuxt-link :to="{ name: 'video' }" class="tracking-wider"
+          >আরো দেখুন</nuxt-link
+        >
       </button>
     </div>
   </div>

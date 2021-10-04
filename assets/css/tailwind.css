@@ -39,6 +39,14 @@ img {
     @apply rounded-md
 }
 
+.video-container {
+    @apply relative w-full
+}
+
+iframe {
+    @apply absolute w-full h-full top-0 left-0
+}
+
 @media (max-width: 992px) {
     .title {
         @apply my-0
@@ -60,5 +68,14 @@ img {
     }
     img {
         @apply rounded-b-none
+    }
+    .video-container {
+        @apply min-h-80
+    }
+}
+
+@media (max-width: 360px) {
+    .video-container {
+        @apply min-h-48
     }
 }

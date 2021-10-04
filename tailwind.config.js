@@ -35,6 +35,10 @@ module.exports = {
             'xl': '1280px',
             '2xl': '1536px',
         },
+        minHeight: {
+            '48': '12.6rem',
+            '80': '20.6rem',
+        }
 
     },
     variants: {

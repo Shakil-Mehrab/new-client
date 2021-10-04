@@ -1,14 +1,13 @@
 <template>
   <div class="container mx-auto sm:px-6 lg:px-8">
-    <div class="-mt-2">
+    <div class="mb-1 video-container">
       <iframe
-        class="w-full"
-        height="400"
-        src="https://www.youtube.com/embed/QHI8OhB5bd4"
-        title="YouTube video player"
+        width="1280"
+        height="720"
+        src="https://www.youtube.com/embed/BnZOIkNgVl8"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowfullscreen=""
       ></iframe>
     </div>
   </div>

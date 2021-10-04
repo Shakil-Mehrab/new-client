@@ -17,7 +17,9 @@
           />
         </div>
         <div class="w-8/12 mt-1">
-          <h4 class="mt-0 title">নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ</h4>
+          <h4 class="pr-1 mt-0 title">
+            নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
+          </h4>
           <div class="flex justify-between">
             <Date />
           </div>

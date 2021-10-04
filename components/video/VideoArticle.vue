@@ -5,8 +5,10 @@
       v-for="n in news"
       :key="n"
     >
-      <a href="">
-        <div class="grid grid-cols-12 gap-1 rounded-md shadow 2md:shadow-none">
+      <nuxt-link to="video/slug">
+        <div
+          class="grid grid-cols-12 gap-1 rounded-md shadow-sm 2md:shadow-none"
+        >
           <div class="relative col-span-12 2md:col-span-4">
             <img
               src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
@@ -22,7 +24,7 @@
             </p>
           </div>
         </div>
-      </a>
+      </nuxt-link>
     </div>
   </div>
 </template>
