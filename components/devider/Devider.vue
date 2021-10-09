@@ -1,11 +1,11 @@
 <template>
-  <div class="relative mx-1">
+  <div class="relative mx-1 mt-2">
     <div class="absolute inset-0 flex items-center" aria-hidden="true">
       <div class="w-full border-t border-gray-300"></div>
     </div>
     <div class="relative flex items-center justify-between">
       <span
-        class="pr-2 text-lg font-bold tracking-wider text-red-700  bg-gray-50 md:text-xl whitespace-nowra"
+        class="pr-2 text-lg font-bold tracking-wider text-red-700  bg-gray-50 whitespace-nowra"
       >
         {{ title }}
       </span>

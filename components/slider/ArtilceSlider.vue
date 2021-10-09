@@ -10,7 +10,7 @@
       :navigationClickTargetSize="20"
       class="relative product-slider"
     >
-      <slide v-for="n in 4" :key="n" class="px-2">
+      <slide v-for="n in 4" :key="n" class="px-1">
         <div>
           <ArticleTop />
         </div>

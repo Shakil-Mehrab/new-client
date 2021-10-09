@@ -8,7 +8,7 @@
 
 @tailwind utilities;
 .title {
-    @apply text-gray-700 text-base leading-none transition duration-500 ease-in-out tracking-wider font-normal
+    @apply text-[1.0625rem] text-gray-700 leading-none transition duration-500 ease-in-out tracking-wider font-normal
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 }
 
 .title-large {
-    @apply text-gray-700 text-xl text-center leading-none transition duration-500 ease-in-out tracking-wider font-medium
+    @apply text-gray-700 text-xl leading-none transition duration-500 ease-in-out tracking-wider font-medium
 }
 
 .title-large:hover {
@@ -39,43 +39,12 @@ img {
     @apply rounded-md
 }
 
-.video-container {
-    @apply relative w-full
-}
-
-iframe {
-    @apply absolute w-full h-full top-0 left-0
-}
-
-@media (max-width: 992px) {
-    .title {
-        @apply my-0
-    }
+.detail-large {
+    @apply text-left text-2xl leading-tight font-semibold text-gray-700
 }
 
 @media (max-width: 640px) {
-    .detail {
-        @apply hidden
-    }
-    .title {
-        @apply text-[1.0625rem] leading-none
-    }
-    .title-large {
-        @apply text-left text-xl leading-none
-    }
-    .detail-large {
-        @apply text-left text-2xl leading-tight font-semibold text-gray-700
-    }
     img {
         @apply rounded-b-none
-    }
-    .video-container {
-        @apply min-h-80
-    }
-}
-
-@media (max-width: 360px) {
-    .video-container {
-        @apply min-h-48
     }
 }

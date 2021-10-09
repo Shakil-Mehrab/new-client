@@ -1,6 +1,6 @@
 
   <template>
-  <div class="w-full xl:mt-0">
+  <div class="w-full">
     <a
       href=""
       class="block mt-1 mb-2 border border-b-0 border-gray-100 rounded-md shadow-sm "
@@ -9,18 +9,17 @@
     >
       <div class="flex before:border-l-2 before:border-red-700">
         <div class="flex w-4/12 mr-3 space-x-1">
-          <!-- <div class="inline-block w-0.5 border-l-2 border-red-700"></div> -->
           <img
             src="https://i.picsum.photos/id/1069/600/300.jpg?hmac=xUqRdpwKgIa_i6muDOCha4JN9Emhvi7GTfxrdVht77g"
             alt=""
             class="h-full ml-1 rounded-md"
           />
         </div>
-        <div class="w-8/12 mt-1">
+        <div class="flex flex-col w-8/12 mt-1">
           <h4 class="pr-1 mt-0 title">
             নারীর শরীরে পেট্রোল ঢেলে আগুন দেয়ার অভিযোগ
           </h4>
-          <div class="flex justify-between">
+          <div class="flex flex-wrap mt-auto">
             <Date />
           </div>
         </div>

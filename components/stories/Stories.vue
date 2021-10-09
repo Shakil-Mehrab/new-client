@@ -1,7 +1,10 @@
 <template>
-  <ul class="space-x-6">
+  <ul class="">
     <carousel
-      :perPageCustom="[[350, 4.5]]"
+      :perPageCustom="[
+        [350, 4.5],
+        [600, 6.5],
+      ]"
       :loop="true"
       :autoplay="false"
       :paginationEnabled="false"
@@ -10,35 +13,10 @@
       :navigationClickTargetSize="20"
       class="relative product-slider"
     >
-      <!-- <slide class="pr-1">
+      <slide v-for="n in 10" :key="n" class="pr-2">
         <li class="flex flex-col items-center space-y-1">
           <div
-            class="relative p-1 rounded-full bg-gradient-to-tr from-yellow-400 to-purple-600"
-          >
-            <a
-              href="#"
-              class="block p-1 transition transform bg-white rounded-full hover:-rotate-6"
-            >
-              <img
-                class="rounded-full w-114 h-114"
-                src="https://placekitten.com/200/200"
-                alt="cute kitty"
-              />
-            </a>
-            <button
-              class="absolute flex items-center justify-center w-6 h-6 font-mono text-2xl font-medium text-white bg-blue-500 border-4 border-white rounded-md bottom-2 right-2 hover:bg-blue-700 focus:outline-none"
-            >
-              <div class="transform -translate-y-px">+</div>
-            </button>
-          </div>
-
-          <a href="#">kitty_one</a>
-        </li>
-      </slide> -->
-      <slide v-for="n in 10" :key="n" class="px-1">
-        <li class="flex flex-col items-center space-y-1">
-          <div
-            class="p-1 rounded-md  bg-gradient-to-tr from-yellow-400 to-fuchsia-600"
+            class="p-1 rounded-md  bg-gradient-to-tr from-red-400 via-gray-400 to-red-400"
           >
             <a
               href="#"
