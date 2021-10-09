@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-700">
+  <div class="">
     <MobileHeader />
     <nuxt />
     <MobileFooter />
