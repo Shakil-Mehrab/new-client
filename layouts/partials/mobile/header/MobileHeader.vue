@@ -22,6 +22,7 @@
               class="relative z-10 flex justify-between flex-shrink-0 h-16 px-2 bg-red-700 shadow "
             >
               <button
+                @click.prevent="openDrawer"
                 type="button"
                 class="flex items-center w-8 h-8 my-auto text-white rounded-md  focus:outline-none"
               >
@@ -32,7 +33,6 @@
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   aria-hidden="true"
-                  @click.prevent="openDrawer"
                 >
                   <path
                     stroke-linecap="round"
