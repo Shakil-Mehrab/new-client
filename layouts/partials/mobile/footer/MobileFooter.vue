@@ -141,7 +141,7 @@
 <script>
 import RedLogo from "@/layouts/logo/RedLogo";
 import SocialMedia from "@/components/social/SocialMedia";
-import FooterPinnedAdd from "@/components/partials/footer/FooterPinnedAdd";
+import FooterPinnedAdd from "@/layouts/partials/mobile/footer/FooterPinnedAdd";
 
 export default {
   components: {

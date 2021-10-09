@@ -3,12 +3,11 @@
     <MobileHeader />
     <nuxt />
     <MobileFooter />
-    <!-- <BottomBannerSticky /> -->
   </div>
 </template>
 <script>
-import MobileHeader from "~/components/partials/header/MobileHeader";
-import MobileFooter from "~/components/partials/footer/MobileFooter";
+import MobileHeader from "@/layouts/partials/mobile/header/MobileHeader";
+import MobileFooter from "@/layouts/partials/mobile/footer/MobileFooter";
 
 export default {
   components: {

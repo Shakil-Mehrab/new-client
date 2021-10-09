@@ -101,8 +101,8 @@
 </template>
 <script>
 import { mapGetters, mapActions } from "vuex";
-import MobileSidebar from "@/components/partials/header/MobileSidebar";
-import Search from "@/components/partials/header/Search";
+import MobileSidebar from "@/layouts/partials/mobile/header/MobileSidebar";
+import Search from "@/layouts/partials/mobile/header/Search";
 import WhiteLogo from "@/layouts/logo/WhiteLogo";
 
 export default {
