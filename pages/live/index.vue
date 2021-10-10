@@ -11,12 +11,12 @@
         allowfullscreen
       ></iframe>
     </div>
-    <!-- <div class="container mx-auto mb-2">
+    <div class="container mx-auto mb-2 mt-7">
       <div class="w-full px-2">
-        <Devider title="অনুষ্ঠান" />
+        <Devider title="সর্বশেষ" />
         <SidebarVideo :news="5" />
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 <script>

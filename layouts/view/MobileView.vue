@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="pt-16 font-solaimanlipi">
     <MobileHeader />
     <nuxt />
     <MobileFooter />

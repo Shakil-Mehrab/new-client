@@ -1,7 +1,17 @@
 <template>
   <div>
     <div
-      class="fixed w-full h-16 transition-all duration-200 ease-in-out transform  -top-32 mobile-header"
+      class="
+        fixed
+        w-full
+        h-16
+        transition-all
+        duration-200
+        ease-in-out
+        transform
+        -top-32
+        z-[9999]
+      "
       :class="{ 'top-0': pinned }"
     >
       <!--  -->
@@ -14,7 +24,15 @@
           "
         />
         <div
-          class="relative flex mb-2 overflow-hidden bg-red-100 shadow-md  mobile-sidebar"
+          class="
+            relative
+            flex
+            mb-2
+            overflow-hidden
+            bg-red-100
+            shadow-md
+            z-[9999]
+          "
         >
           <!-- navigation bar  -->
           <div class="flex flex-col flex-1 w-0 overflow-hidden">
@@ -86,14 +104,14 @@
       </div>
     </div>
     <div
-      class="relative flex mb-2 overflow-hidden bg-gray-100 shadow-md  mobile-sidebar"
+      class="relative flex mb-2 overflow-hidden bg-gray-100 shadow-md z-[99999]"
     >
       <!-- sidebar  -->
       <MobileSidebar
         :class="
           isOpen
             ? 'ml-0  transform transition-all ease-in duration-600'
-            : 'hide-left transform transition-all ease-out duration-600'
+            : ' -ml-80 invisible transform transition-all ease-out duration-600'
         "
       />
     </div>

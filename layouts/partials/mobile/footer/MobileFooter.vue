@@ -1,5 +1,5 @@
 <template>
-  <footer class="pb-1 bg-gray-200">
+  <footer class="pb-1 bg-gray-200 font-poppins">
     <section class="text-sm leading-normal tracking-wide text-gray-700">
       <div class="container py-6 mx-auto">
         <div class="px-3 leading-normal tracking-wide">

@@ -22,10 +22,10 @@ module.exports = {
             transitionProperty: {
                 'height': 'height',
             },
-            // fontFamily: {
-            //     'kiron': "'Kiron', 'Arial', 'sans-serif'",
-            //     'siyamrupali': "'Siyamrupali', 'Arial', 'sans-serif'",
-            // },
+            fontFamily: {
+                'solaimanlipi': "'SolaimanLipi', 'Arial', 'sans-serif'",
+                'poppins': "'Poppins', 'Arial', 'sans-serif'",
+            },
         },
         screens: {
             'sm': '640px',

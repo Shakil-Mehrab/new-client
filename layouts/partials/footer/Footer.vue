@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-700">
+  <footer class="bg-gray-700 font-poppins">
     <section class="text-white">
       <div class="container py-8 mx-auto">
         <div class="flex full">

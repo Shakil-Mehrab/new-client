@@ -1,6 +1,16 @@
 <template>
   <div
-    class="fixed w-full h-16 transition-all duration-200 ease-in-out transform  -bottom-16 footer-fixed"
+    class="
+      fixed
+      w-full
+      h-16
+      transition-all
+      duration-200
+      ease-in-out
+      transform
+      -bottom-16
+      z-[9999]
+    "
     :class="{ 'bottom-0': footer_pinned }"
   >
     <img
