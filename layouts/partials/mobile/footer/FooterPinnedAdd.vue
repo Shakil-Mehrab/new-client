@@ -1,7 +1,7 @@
 <template>
   <div
-    class="fixed w-full h-16 transition-all duration-200 ease-in-out transform -bottom-16 footer-fixed"
-    :class="{ 'footer--pinned': footer_pinned }"
+    class="fixed w-full h-16 transition-all duration-200 ease-in-out transform  -bottom-16 footer-fixed"
+    :class="{ 'bottom-0': footer_pinned }"
   >
     <img
       src="https://i.picsum.photos/id/5/600/352.jpg?hmac=PK5UuyyfQ5ieo5w5axb2dDEPbhtWCVoZhyMn69rjZBo"

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
-.subscribe-bg-img {
+
+/* .subscribe-bg-img {
     background-image: url("@/assets/images/dbc/bg.png");
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 body {
     font-family: 'SolaimanLipi', Arial, sans-serif !important;
@@ -25,39 +26,10 @@ body {
     z-index: 9999;
 }
 
-.nav--pinned {
-    top: 0;
-}
-
 .footer-fixed {
     z-index: 9999;
-}
-
-.footer--pinned {
-    bottom: 0;
 }
 
 footer {
     font-family: 'Poppins', sans-serif;
 }
-
-.english {
-    /* font-family: 'Poppins', sans-serif; */
-}
-
-
-/* .video-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    min-height: 200px;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-} */

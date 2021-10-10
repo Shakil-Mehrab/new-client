@@ -2,7 +2,7 @@
   <div>
     <div
       class="fixed w-full h-16 transition-all duration-200 ease-in-out transform  -top-32 mobile-header"
-      :class="{ 'nav--pinned': pinned }"
+      :class="{ 'top-0': pinned }"
     >
       <!--  -->
       <div class="relative">

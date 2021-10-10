@@ -48,3 +48,9 @@ img {
         @apply rounded-b-none
     }
 }
+
+@media (max-width: 360px) {
+    .live-video {
+        @apply -top-16 h-72
+    }
+}
