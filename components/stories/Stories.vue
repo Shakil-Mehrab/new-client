@@ -16,7 +16,7 @@
       <slide v-for="n in 10" :key="n" class="pr-2">
         <li class="flex flex-col items-center space-y-1">
           <div
-            class="p-1 rounded-md  bg-gradient-to-tr from-red-900 via-red-900 to-red-400"
+            class="p-1 rounded-md  bg-gradient-to-tr from-red-600 via-red-700 to-red-400"
           >
             <a
               href="#"
@@ -30,7 +30,7 @@
             </a>
           </div>
 
-          <a href="#">kitty_two</a>
+          <!-- <a href="#">kitty_two</a> -->
         </li>
       </slide>
     </carousel>

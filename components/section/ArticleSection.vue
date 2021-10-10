@@ -10,7 +10,7 @@
       <div class="flex before:border-l-2 before:border-red-700">
         <div class="w-4/12 mr-3 space-x-1">
           <img
-            src="https://i.picsum.photos/id/1069/600/300.jpg?hmac=xUqRdpwKgIa_i6muDOCha4JN9Emhvi7GTfxrdVht77g"
+            src="https://i.picsum.photos/id/633/600/352.jpg?hmac=LTR0-32ho0IYd8Q5kHouAmc5OI25Ux5KL05auEEqt8U"
             alt=""
             class="w-full h-auto ml-1 rounded-md"
           />

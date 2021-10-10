@@ -6,6 +6,14 @@
     src: url('~/assets/fonts/kiron/Kiron.eot?#iefix') format('embedded-opentype'), url('~/assets/fonts/kiron/Kiron.woff') format('woff'), url('~/assets/fonts/kiron/Kiron.ttf') format('truetype'), url('~/assets/fonts/kiron/Kiron.otf') format('truetype'), url('~/assets/fonts/kiron/Kiron.svg#svgFontName') format('svg');
 } */
 
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('~/assets/fonts/solaimanlipi/SolaimanLipi.eot');
+    src: url('~/assets/fonts/solaimanlipi/SolaimanLipi.woff') format('woff'), url('~/assets/fonts/solaimanlipi/SolaimanLipi.ttf') format('truetype'), url('~/assets/fonts/solaimanlipi/SolaimanLipi.svg#SolaimanLipiNormal') format('svg'), url('~/assets/fonts/solaimanlipi/SolaimanLipi.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @tailwind utilities;
 .title {
     @apply text-[1.0625rem] text-gray-700 leading-none transition duration-500 ease-in-out tracking-wider font-normal
