@@ -5,8 +5,8 @@
       :loop="true"
       :autoplay="false"
       :paginationEnabled="true"
-      :paginationPadding="4"
-      :paginationSize="4"
+      :paginationPadding="2"
+      :paginationSize="2"
       :navigationClickTargetSize="20"
       class="relative product-slider"
     >

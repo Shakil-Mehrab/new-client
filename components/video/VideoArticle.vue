@@ -1,10 +1,11 @@
 <template>
   <div class="flex flex-wrap">
     <div class="w-6/12 p-1" v-for="n in news" :key="n">
-      <nuxt-link to="video/slug">
-        <div
-          class="grid grid-cols-12 border border-b-0 border-gray-100 rounded-md shadow-sm "
-        >
+      <nuxt-link
+        to="video/slug"
+        class="block h-full border border-b-0 border-gray-100 rounded-md shadow-sm "
+      >
+        <div class="grid grid-cols-12">
           <div class="relative col-span-12">
             <img
               src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"

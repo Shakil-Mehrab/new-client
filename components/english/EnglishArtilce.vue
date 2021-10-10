@@ -32,7 +32,7 @@
     <div class="w-full">
       <div class="px-1">
         <div class="w-full">
-          <div class="py-2 border-b border-gray-100" v-for="n in 5" :key="n">
+          <div class="py-2 border-b border-gray-200" v-for="n in 5" :key="n">
             <a href="">
               <h4 class="text-base leading-normal tracking-wide">
                 Allegedly pouring petrol on the woman's body and setting it on

@@ -5,10 +5,8 @@
       :loop="true"
       :autoplay="false"
       :paginationEnabled="true"
-      :paginationPadding="4"
-      :paginationSize="4"
-      :navigationClickTargetSize="20"
-      :navigationEnabled="true"
+      :paginationPadding="2"
+      :paginationSize="2"
       class="relative product-slider"
     >
       <slide v-for="n in 4" :key="n" class="px-1">
@@ -37,10 +35,10 @@ export default {
 };
 </script>
 <style>
-.VueCarousel-navigation-next[data-v-453ad8cd] {
+/* .VueCarousel-navigation-next[data-v-453ad8cd] {
   margin-left: -46px !important;
   opacity: 80%;
-  /* :navigationNextLabel="'&gt;'" */
-}
+
+} */
 </style>
 

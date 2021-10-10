@@ -10,7 +10,7 @@
       <div class="flex">
         <div class="relative w-4/12 mr-2">
           <img
-            src="https://i.picsum.photos/id/828/600/300.jpg?hmac=se7MuHbr2rWGsfM-LFl0pN3aN_1kqs8Xbftdmc84j4g"
+            src="https://i.picsum.photos/id/633/600/352.jpg?hmac=LTR0-32ho0IYd8Q5kHouAmc5OI25Ux5KL05auEEqt8U"
             alt=""
             class="w-full h-full rounded-md rounded-r-none"
           />

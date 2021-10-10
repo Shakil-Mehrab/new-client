@@ -16,14 +16,14 @@
       <slide v-for="n in 10" :key="n" class="pr-2">
         <li class="flex flex-col items-center space-y-1">
           <div
-            class="p-1 rounded-md  bg-gradient-to-tr from-red-400 via-gray-400 to-red-400"
+            class="p-1 rounded-md  bg-gradient-to-tr from-red-900 via-red-900 to-red-400"
           >
             <a
               href="#"
               class="block p-1 transition transform bg-white rounded-md  hover:-rotate-6"
             >
               <img
-                class="w-auto h-20 rounded-md"
+                class="rounded-md w-14 h-14"
                 src="https://placekitten.com/201/200"
                 alt="cute kitty"
               />

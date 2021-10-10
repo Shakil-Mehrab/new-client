@@ -8,11 +8,11 @@
       :key="n"
     >
       <div class="flex before:border-l-2 before:border-red-700">
-        <div class="flex w-4/12 mr-3 space-x-1">
+        <div class="w-4/12 mr-3 space-x-1">
           <img
             src="https://i.picsum.photos/id/1069/600/300.jpg?hmac=xUqRdpwKgIa_i6muDOCha4JN9Emhvi7GTfxrdVht77g"
             alt=""
-            class="h-full ml-1 rounded-md"
+            class="w-full h-auto ml-1 rounded-md"
           />
         </div>
         <div class="flex flex-col w-8/12 mt-1">
