@@ -1,1 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.video-fixed {
+    position: fixed;
+    z-index: 999999;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+}
+
+.video-fixed .live-video-fixed {
+    margin-top: -45px !important
+}

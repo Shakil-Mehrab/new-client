@@ -1,15 +1,17 @@
 <template>
-  <div class="-mt-4">
-    <div class="mb-2 aspect-w-16 aspect-h-9">
-      <iframe
-        class="live-video"
-        name="ifram2"
-        src="https://www.mcaster.tv/channel/dbcnews.php?u=dbcnews&amp;vw=100%&amp;vh=360"
-        frameborder="0"
-        scrolling="no"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+  <div class="relative -mt-4">
+    <div class="video-fixed">
+      <div class="mb-2 aspect-w-16 aspect-h-9">
+        <iframe
+          class="live-video live-video-fixed"
+          name="ifram2"
+          src="https://www.mcaster.tv/channel/dbcnews.php?u=dbcnews&amp;vw=100%&amp;vh=360"
+          frameborder="0"
+          scrolling="no"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
     <div class="container mx-auto mb-2 mt-7">
       <div class="w-full px-2">
