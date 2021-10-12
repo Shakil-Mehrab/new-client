@@ -120,7 +120,7 @@
         :class="
           isOpen
             ? 'ml-0  transform transition-all ease-in duration-600'
-            : ' -ml-80 invisible transform transition-all ease-out duration-600'
+            : ' -ml-80 invisible opacity-0 transform transition-all ease-out duration-600'
         "
       />
     </div>
