@@ -10,7 +10,7 @@
       aria-hidden="true"
     ></div>
 
-    <div class="relative flex flex-col flex-1 w-full max-w-xs py-2 bg-white">
+    <div class="relative flex flex-col flex-1 w-full py-2 bg-white">
       <div class="absolute top-0 right-0 pt-2 -mr-12">
         <button
           type="button"

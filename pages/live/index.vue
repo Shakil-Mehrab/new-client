@@ -1,12 +1,20 @@
 <template>
   <div class="relative -mt-4">
-    <div :class="{ 'video-fixed': live_fixed }">
+    <div
+      :class="{
+        'video-fixed fixed z-[99999] overflow-hidden right-0 bottom-0':
+          live_fixed,
+      }"
+    >
       <div
-        class="mb-2 aspect-w-16 aspect-h-9"
-        :class="{ 'live-video-fixed live-video-protrait': live_fixed }"
+        class="mb-2 aspect-w-16 aspect-h-9 live-video"
+        :class="{
+          'live-video-fixed live-video-protrait live-video-verticle':
+            live_fixed,
+        }"
       >
         <iframe
-          class="live-video"
+          class=""
           name="ifram2"
           src="https://www.mcaster.tv/channel/dbcnews.php?u=dbcnews&amp;vw=100%&amp;vh=360"
           frameborder="0"
@@ -16,7 +24,7 @@
         ></iframe>
       </div>
     </div>
-    <div class="container mx-auto mb-2 mt-7">
+    <div class="container mx-auto mb-2 mt-[-4.2rem]">
       <div class="w-full px-2">
         <Devider title="সর্বশেষ" />
         <SidebarVideo :news="20" />

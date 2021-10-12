@@ -51,14 +51,33 @@ img {
     @apply text-left text-2xl leading-tight font-semibold text-gray-700
 }
 
+.video-fixed {
+    @apply w-[62.5rem];
+}
+
 @media (max-width: 640px) {
     img {
         @apply rounded-b-none
+    }
+    .video-fixed .live-video-fixed {
+        @apply mt-[-6.5rem] !important;
+    }
+    .video-fixed .live-video-protrait {
+        @apply h-[17rem];
+    }
+    .video-fixed {
+        @apply w-[16.5rem];
     }
 }
 
 @media (max-width: 360px) {
     .live-video {
         @apply -top-16 h-72
+    }
+    .video-fixed .live-video-fixed {
+        @apply mt-[-2.5rem] !important;
+    }
+    .video-fixed .live-video-verticle {
+        @apply h-[16.5rem];
     }
 }

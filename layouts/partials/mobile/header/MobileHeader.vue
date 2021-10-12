@@ -10,7 +10,7 @@
         ease-in-out
         transform
         -top-32
-        z-[9999]
+        z-[999999]
       "
       :class="{ 'top-0': pinned }"
     >
@@ -32,6 +32,7 @@
             bg-red-100
             shadow-md
             z-[9999]
+            dkfdk
           "
         >
           <!-- navigation bar  -->
@@ -104,7 +105,15 @@
       </div>
     </div>
     <div
-      class="relative flex mb-2 overflow-hidden bg-gray-100 shadow-md z-[99999]"
+      class="
+        relative
+        flex
+        mb-2
+        overflow-hidden
+        bg-gray-100
+        shadow-md
+        z-[999999]
+      "
     >
       <!-- sidebar  -->
       <MobileSidebar
