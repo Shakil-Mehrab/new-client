@@ -71,7 +71,7 @@
         <nav class="px-2 space-y-1">
           <a
             href="#"
-            class="flex items-center px-2 py-2 text-base font-medium text-gray-900 bg-gray-100 rounded-md  group"
+            class="flex items-center px-2 py-2 text-base font-medium text-gray-900 rounded-md  group"
           >
             <svg
               class="flex-shrink-0 w-6 h-6 mr-4 text-gray-500"
@@ -94,7 +94,7 @@
           <div class="group" v-for="m in 5" :key="m">
             <a
               href="#"
-              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
+              class="flex items-center justify-between px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:text-gray-900 group"
             >
               <div class="flex">
                 <svg
@@ -135,8 +135,9 @@
               class="ml-4 transition-all ease-in-out transform  duration-600 group-hover:visible group-hover:h-full"
             >
               <nuxt-link
-                :to="{ name: 'category' }"
-                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:bg-gray-50 hover:text-gray-900 group"
+                :to="{ name: 'category-slug', params: { slug: n } }"
+                class="flex items-center px-2 py-2 text-base font-medium text-gray-600 rounded-md  hover:text-gray-900 group"
+                :class="{ 'bg-gray-100': isSlug == n }"
                 v-for="n in 4"
                 :key="n"
                 @click.prevent="closeDrawer"
@@ -172,6 +173,16 @@ import { mapGetters, mapActions } from "vuex";
 import RedLogo from "@/layouts/logo/RedLogo";
 
 export default {
+  data() {
+    return {
+      isSlug: this.$route.params.slug,
+    };
+  },
+  watch: {
+    "$route.params"(params) {
+      this.isSlug = params.slug;
+    },
+  },
   components: {
     RedLogo,
   },
