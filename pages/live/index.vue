@@ -1,30 +1,26 @@
 <template>
-  <div class="relative -mt-4">
+  <div class="-mt-2">
     <div
-      :class="{
-        'video-fixed fixed z-[99999] overflow-hidden right-0 bottom-0':
-          live_fixed,
-      }"
+      :class="
+        live_fixed
+          ? 'video-fixed fixed  translate-y-full transform transition-all ease-in-out duration-1000 right-2 z-[99999] rounded-md overflow-hidden'
+          : ''
+      "
     >
-      <div
-        class="mb-2 aspect-w-16 aspect-h-9 live-video"
-        :class="{
-          'live-video-fixed live-video-protrait live-video-verticle':
-            live_fixed,
-        }"
-      >
+      <div class="aspect-w-16 aspect-h-9">
         <iframe
-          class=""
-          name="ifram2"
-          src="https://www.mcaster.tv/channel/dbcnews.php?u=dbcnews&amp;vw=100%&amp;vh=360"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UhPXVH6nmpE"
+          title="YouTube video player"
           frameborder="0"
-          scrolling="no"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>
     </div>
-    <div class="container mx-auto mb-2 mt-[-4.2rem]">
+
+    <div class="container mx-auto mb-2">
       <div class="w-full px-2">
         <Devider title="সর্বশেষ" />
         <SidebarVideo :news="20" />
@@ -51,7 +47,6 @@ export default {
         const pxFromTop = window.scrollY || window.pageYOffset;
         if (pxFromTop > menuHeight) {
           this.live_fixed = true;
-          console.log("hi");
         } else {
           this.live_fixed = false;
         }

@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@media (min-width: 640px) {
+    .video-fixed {
+        bottom: calc(45vh);
+    }
+}
+
+@media (min-width: 360px) {
+    .video-fixed {
+        bottom: calc(35vh);
+    }
+}

@@ -132,7 +132,7 @@
               </div> -->
             </a>
             <div
-              class="ml-4 transition-all ease-in-out transform  duration-600 group-hover:visible group-hover:h-full"
+              class="ml-4 transition-all duration-200 ease-in-out transform  group-hover:visible group-hover:h-full"
             >
               <nuxt-link
                 :to="{ name: 'category-slug', params: { slug: n } }"

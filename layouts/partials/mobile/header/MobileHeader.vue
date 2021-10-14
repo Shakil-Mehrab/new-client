@@ -14,7 +14,6 @@
       "
       :class="{ 'top-0': pinned }"
     >
-      <!--  -->
       <div class="relative">
         <Search
           :class="
@@ -119,8 +118,8 @@
       <MobileSidebar
         :class="
           isOpen
-            ? 'ml-0  transform transition-all ease-in duration-600'
-            : ' -ml-80 invisible opacity-0 transform transition-all ease-out duration-600'
+            ? 'ml-0  transform transition-all ease-in duration-75'
+            : ' -ml-80 invisible opacity-0 transform transition-all ease-out duration-75'
         "
       />
     </div>
